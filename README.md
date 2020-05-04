@@ -13,12 +13,10 @@ Required Hardware:
     5v 2.5A Micro USB power supply
     8GB+ SD Card
     
-Instructions:
+Instructions: 
 
     Install Retropie and configure your desired content
-    Download/wget the repositiory to your root directory as a zip
-    Input the command "sudo unzip -o -q CRTPi-Project-master.zip" to extract and overwrite all files necessary
-    Power off Pi using the command "sudo poweroff"
+    Get the contents of the repo into your root folder (this is hard to do since git-clone won't overwrite, and downloading the zip includes the project folder over root) and overwrite all files
     Install GPIO hat with RGB output (RetroTINK Ultimate, VGA666, Pi2SCART, RGB-Pi, etc.)
     Put SD card in PC and edit /boot/config.txt to uncomment the appropriate block for your GPIO device AND comment out all other device blocks
     Put SD card back in Pi and power on while connected to your output device
