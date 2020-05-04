@@ -13,7 +13,7 @@ Required Hardware:
     5v 2.5A Micro USB power supply
     8GB+ SD Card
     
-Instructions: 
+Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+. Anything you overwrite is your own fault at this point!
 
     Install Retropie and configure your desired content
     Download the CRTPi-Project.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-Project.zip" 
