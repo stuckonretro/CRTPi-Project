@@ -1,7 +1,7 @@
 # CRTPi-Project
 A Vanilla+ experience for CRT gamers utilizing Retropie with RGB Hats!
 
-Thank you very much to Ruckage, ChipsnBlip, Podunk_Labs, 
+Thank you very much to Ruckage, Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, ChipsnBlip, Podunk_Labs, kitty666cats, and anyone I've missed! Thank you for the input, support, resources, and help along the way!
 
 https://redd.it/fosbir
 
