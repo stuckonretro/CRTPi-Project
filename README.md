@@ -1,6 +1,8 @@
 # CRTPi-Project
 A Vanilla+ experience for CRT gamers utilizing Retropie with RGB Hats!
 
+Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, Ruckage, ChipsnBlip, Podunk_Labs, kitty666cats, and anyone I've missed! Thank you for the input, support, resources, and help along the way!
+
 https://redd.it/fosbir
 
 Required Hardware:
@@ -10,6 +12,24 @@ Required Hardware:
     Appropriate RGB/YPrBr cable
     5v 2.5A Micro USB power supply
     8GB+ SD Card
+    
+Instructions: 
+
+    Install Retropie and configure your desired content
+    Get the contents of the repo into your root folder (this is hard to do since git-clone won't overwrite, and downloading the zip includes the project folder over root) and overwrite all files
+    Install GPIO hat with RGB output (RetroTINK Ultimate, VGA666, Pi2SCART, RGB-Pi, etc.)
+    Put SD card in PC and edit /boot/config.txt to uncomment the appropriate block for your GPIO device AND comment out all other device blocks
+    Put SD card back in Pi and power on while connected to your output device
+    Drop to the command line or connect via SSH
+    Input this command: "sudo chmod +x -R /opt/retropie/configs/all/*.sh"
+    If using a VGA666-based hat (anything other than RetroTINK) run 'Enable VGA666' from the Retropie carousel menu
+    Reboot (VGA script will reboot automatically)
+	
+Optional Instructions:
+
+	Install the following theme: /ruckage/snes-mini/
+	Install the following opt packages: scummvm, lr-beetle-wswan, lr-fbalpha2012, lr-mame2000, lr-mame2010, lr-nxengine, lr-prboom, lr-ppsspp, lr-snes9x2002, lr-tgbdual, lr-tyrquake
+	Install the following experimental packages: lr-mame2003-plus
 
 Changelog: v2.0 for 888 & 666 03/25/2020
 
