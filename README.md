@@ -17,7 +17,8 @@ Instructions:
 
     Install Retropie and configure your desired content
     Download the CRTPi-Project.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-Project.zip" 
-    Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-Project.zip"
+    Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-Project.zip"\
+    Return read/write permissions to those files with the command "sudo chmod a+rw -R /opt/retropie/configs/"
     Remove the zip with the command "sudo rm CRTPi-Project.zip"
     Power off the Pi with the command "sudo poweroff" and remove power once the green light stops blinking
     Put SD card in PC and edit /boot/config.txt to uncomment the appropriate block for your GPIO device AND comment out all other device blocks
@@ -25,8 +26,9 @@ Instructions:
     Put SD card back in Pi and power on while connected to your output device
     Drop to the command line or connect via SSH and input the command "sudo chmod +x -R /opt/retropie/configs/all/*.sh"
     Launch back into emulationstation (if necessary)
-    If using a VGA666-based hat (anything other than RetroTINK) run 'Enable VGA666' from the Retropie carousel menu
+    **If using a VGA666-based hat** (anything other than RetroTINK) run 'Enable VGA666' from the Retropie carousel menu
     Reboot (VGA script will reboot automatically)
+    Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
 	
 Optional Instructions:
 
