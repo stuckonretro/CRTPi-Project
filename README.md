@@ -16,12 +16,15 @@ Required Hardware:
 Instructions: 
 
     Install Retropie and configure your desired content
-    Get the contents of the repo into your root folder (this is hard to do since git-clone won't overwrite, and downloading the zip includes the project folder over root) and overwrite all files
-    Install GPIO hat with RGB output (RetroTINK Ultimate, VGA666, Pi2SCART, RGB-Pi, etc.)
+    Download the CRTPi-Project.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-Project.zip" 
+    Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-Project.zip"
+    Remove the zip with the command "sudo rm CRTPi-Project.zip"
+    Power off the Pi with the command "sudo poweroff" and remove power once the green light stops blinking
     Put SD card in PC and edit /boot/config.txt to uncomment the appropriate block for your GPIO device AND comment out all other device blocks
+    Install GPIO hat with RGB output (RetroTINK Ultimate, VGA666, Pi2SCART, RGB-Pi, etc.)
     Put SD card back in Pi and power on while connected to your output device
-    Drop to the command line or connect via SSH
-    Input this command: "sudo chmod +x -R /opt/retropie/configs/all/*.sh"
+    Drop to the command line or connect via SSH and input the command "sudo chmod +x -R /opt/retropie/configs/all/*.sh"
+    Launch back into emulationstation (if necessary)
     If using a VGA666-based hat (anything other than RetroTINK) run 'Enable VGA666' from the Retropie carousel menu
     Reboot (VGA script will reboot automatically)
 	
