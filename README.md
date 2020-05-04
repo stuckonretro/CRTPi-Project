@@ -17,6 +17,7 @@ Instructions:
 
     Install Retropie and configure your desired content
     Download the CRTPi-Project.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-Project.zip" 
+    ***WARNING: THE NEXT STEP WILL OVERWRITE GAMELIST.XML FILES AS SHOWN IN THE REPRO! BACK UP ACCORDINGLY!!***
     Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-Project.zip"\
     Return read/write permissions to those files with the command "sudo chmod a+rw -R /opt/retropie/configs/"
     Remove the zip with the command "sudo rm CRTPi-Project.zip"
