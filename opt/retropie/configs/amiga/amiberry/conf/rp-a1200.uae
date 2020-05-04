@@ -1,0 +1,8 @@
+config_description=RetroPie A1200, 68EC020, AGA, 2MB Chip
+chipmem_size=4
+finegrain_cpu_speed=1024
+cpu_type=68ec020
+cpu_model=68020
+chipset=aga
+cachesize=0
+kickstart_rom_file=$(FILE_PATH)/kick31.rom

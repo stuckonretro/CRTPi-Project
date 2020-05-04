@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./240p_MegaCD_JP.iso</path>
+		<name>240p Test Suite (JP)</name>
+		<image>./images/240p_MegaCD_JP-image.png</image>
+		<rating>1.0</rating>
+		<releasedate>20110101T000000</releasedate>
+		<developer>Artemio Urbina</developer>
+		<publisher>Artemio Urbina</publisher>
+		<genre>Test</genre>
+		<playcount>4</playcount>
+		<lastplayed>20191019T184457</lastplayed>
+	</game>
+	<game>
+		<path>./240p_SegaCD_USA.iso</path>
+		<name>240p Test Suite (US)</name>
+		<image>./images/240p_SegaCD_USA-image.png</image>
+		<rating>1.0</rating>
+		<releasedate>20110101T000000</releasedate>
+		<developer>Artemio Urbina</developer>
+		<publisher>Artemio Urbina</publisher>
+		<genre>Test</genre>
+		<playcount>10</playcount>
+		<lastplayed>20200319T213547</lastplayed>
+	</game>
+	<game>
+		<path>./240p_MegaCD_EU.iso</path>
+		<name>240p Test Suite (EU)</name>
+		<image>./images/240p_MegaCD_EU-image.png</image>
+		<rating>1.0</rating>
+		<releasedate>20110101T000000</releasedate>
+		<developer>Artemio Urbina</developer>
+		<publisher>Artemio Urbina</publisher>
+		<genre>Test</genre>
+		<playcount>6</playcount>
+		<lastplayed>20200320T203909</lastplayed>
+	</game>
+</gameList>

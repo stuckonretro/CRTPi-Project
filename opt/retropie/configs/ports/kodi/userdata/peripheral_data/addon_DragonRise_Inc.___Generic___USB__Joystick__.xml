@@ -1,0 +1,4 @@
+<settings>
+    <setting id="left_stick_deadzone" value="0.20" />
+    <setting id="right_stick_deadzone" value="0.20" />
+</settings>

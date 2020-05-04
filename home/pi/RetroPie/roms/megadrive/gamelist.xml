@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./Crusader of Centy (U) [!].zip</path>
+		<name>Crusader of Centy (U) [!]</name>
+		<playcount>1</playcount>
+		<lastplayed>20200320T164919</lastplayed>
+	</game>
+	<game>
+		<path>./Sonic and Knuckles &amp; Sonic 3 (JUE) [!].zip</path>
+		<name>Sonic and Knuckles &amp; Sonic 3 (JUE) [!]</name>
+		<playcount>4</playcount>
+		<lastplayed>20200320T211156</lastplayed>
+	</game>
+	<game>
+		<path>./240pSuite-1.17.bin</path>
+		<name>240p Suite v1.17</name>
+		<image>./images/240pSuite-1.17-image.png</image>
+		<rating>1.0</rating>
+		<releasedate>20110101T000000</releasedate>
+		<developer>Artemio Urbina</developer>
+		<publisher>Artemio Urbina</publisher>
+		<genre>Test</genre>
+		<playcount>15</playcount>
+		<lastplayed>20200324T225759</lastplayed>
+	</game>
+	<game>
+		<path>./Wonder Boy In Monster World (UE) [!].zip</path>
+		<name>Wonder Boy In Monster World (UE) [!]</name>
+		<playcount>2</playcount>
+		<lastplayed>20200324T223433</lastplayed>
+	</game>
+</gameList>

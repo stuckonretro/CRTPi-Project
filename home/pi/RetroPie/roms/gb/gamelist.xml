@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./The Legend of Zelda - Link's Awakening DX.zip</path>
+		<name>The Legend of Zelda - Link's Awakening DX</name>
+		<playcount>1</playcount>
+		<lastplayed>20200320T000813</lastplayed>
+	</game>
+	<game>
+		<path>./Wario Land 3.zip</path>
+		<name>Wario Land 3</name>
+		<playcount>1</playcount>
+		<lastplayed>20200320T035229</lastplayed>
+	</game>
+	<game>
+		<path>./gb240p.gb</path>
+		<name>144p Test Suite v0.19</name>
+		<image>./images/gb240p-image.png</image>
+		<rating>1.0</rating>
+		<releasedate>20180625T000000</releasedate>
+		<developer>Artemio Urbina</developer>
+		<publisher>Damian Yerrick</publisher>
+		<genre>Test</genre>
+		<playcount>14</playcount>
+		<lastplayed>20200320T202835</lastplayed>
+	</game>
+	<game>
+		<path>./The Legend of Zelda - Link's Awakening.zip</path>
+		<name>The Legend of Zelda - Link's Awakening</name>
+		<playcount>4</playcount>
+		<lastplayed>20200324T224525</lastplayed>
+	</game>
+</gameList>

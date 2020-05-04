@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./240pSuite-PAL.sfc</path>
+		<name>240p Test Suite (PAL)</name>
+		<image>./images/240pSuite-PAL-image.png</image>
+		<rating>1.0</rating>
+		<releasedate>20110101T000000</releasedate>
+		<developer>Artemio Urbina</developer>
+		<publisher>Artemio Urbina</publisher>
+		<genre>Test</genre>
+		<playcount>1</playcount>
+		<lastplayed>20190927T184054</lastplayed>
+	</game>
+	<game>
+		<path>./Secret of Mana (U) [!].zip</path>
+		<name>Secret of Mana (U) [!]</name>
+		<playcount>3</playcount>
+		<lastplayed>20190929T181319</lastplayed>
+	</game>
+	<game>
+		<path>./Star Fox 2.zip</path>
+		<name>Star Fox 2</name>
+		<playcount>1</playcount>
+		<lastplayed>20190929T181135</lastplayed>
+	</game>
+	<game>
+		<path>./Legend of Zelda, The - A Link to the Past (U) [!].zip</path>
+		<name>Legend of Zelda, The - A Link to the Past (U) [!]</name>
+		<playcount>1</playcount>
+		<lastplayed>20200320T010336</lastplayed>
+	</game>
+	<game>
+		<path>./Mega Man Z3.smc</path>
+		<name>Mega Man Z3</name>
+		<playcount>1</playcount>
+		<lastplayed>20200320T024904</lastplayed>
+	</game>
+	<game>
+		<path>./Super Metroid - Redux.sfc</path>
+		<name>Super Metroid - Redux</name>
+		<playcount>4</playcount>
+		<lastplayed>20200320T164104</lastplayed>
+	</game>
+	<game>
+		<path>./240pSuite.sfc</path>
+		<name>240p Test Suite (NTSC)</name>
+		<image>./images/240pSuite-image.png</image>
+		<rating>1.0</rating>
+		<releasedate>20110101T000000</releasedate>
+		<developer>Artemio Urbina</developer>
+		<publisher>Artemio Urbina</publisher>
+		<genre>Test</genre>
+		<playcount>27</playcount>
+		<lastplayed>20200324T224306</lastplayed>
+	</game>
+	<game>
+		<path>./Super Mario World (U) [!].smc.zip</path>
+		<name>Super Mario World (U) [!].smc</name>
+		<playcount>5</playcount>
+		<lastplayed>20200325T142157</lastplayed>
+	</game>
+	<game>
+		<path>./Super Metroid.zip</path>
+		<name>Super Metroid</name>
+		<playcount>1</playcount>
+		<lastplayed>20200324T223306</lastplayed>
+	</game>
+</gameList>
