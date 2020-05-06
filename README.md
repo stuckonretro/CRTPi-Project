@@ -12,7 +12,14 @@ Required Hardware:
     Appropriate RGB/YPrBr cable
     5v 2.5A Micro USB power supply
     8GB+ SD Card
-    
+
+Optional Prerequisites:
+
+	Install the following theme: /ruckage/snes-mini/
+	Install the following opt packages: scummvm, lr-beetle-wswan, lr-fbalpha2012, lr-mame2000, lr-mame2010, lr-nxengine, lr-prboom, lr-ppsspp, lr-snes9x2002, lr-tgbdual, lr-tyrquake
+	Install the following experimental packages: lr-mame2003-plus
+
+
 Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+. Anything you overwrite is your own fault at this point!
 
     Install Retropie and configure your desired content
@@ -31,12 +38,6 @@ Instructions: This is recommended to be installed on a fresh Retropie install on
     Reboot (VGA script will reboot automatically)
     Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
 	
-Optional Instructions:
-
-	Install the following theme: /ruckage/snes-mini/
-	Install the following opt packages: scummvm, lr-beetle-wswan, lr-fbalpha2012, lr-mame2000, lr-mame2010, lr-nxengine, lr-prboom, lr-ppsspp, lr-snes9x2002, lr-tgbdual, lr-tyrquake
-	Install the following experimental packages: lr-mame2003-plus
-
 Changelog: v2.0 for 888 & 666 03/25/2020
 
     Disabled Runahead for lr-snes9x (current fork)
