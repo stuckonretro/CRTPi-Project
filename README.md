@@ -16,7 +16,7 @@ Required Hardware:
 Optional Prerequisites:
 
 	Install the following theme: /ruckage/snes-mini/
-	Install the following opt packages: scummvm, lr-beetle-wswan, lr-fbalpha2012, lr-mame2000, lr-mame2010, lr-nxengine, lr-prboom, lr-ppsspp, lr-snes9x2002, lr-tgbdual, lr-tyrquake
+	Install the following opt packages: scummvm, lr-beetle-wswan, lr-fbalpha2012, lr-mame2000, lr-mame2010, lr-nxengine, lr-ppsspp, lr-prboom, lr-snes9x2002, lr-tgbdual, lr-tyrquake
 	Install the following experimental packages: lr-mame2003-plus
 
 
