@@ -27,7 +27,7 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
 
 **Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+ using the 4.6 offical image (Or 4.5.1 updated to 4.6). Anything you overwrite is your own fault at this point!**
 
-*RGB*
+*RGB: For RetroTINK Ultimate, Pi2SCART, RGB-Pi, or VGA666 to a 15khz Display*
 
     Install Retropie and configure your desired content
     Connect to WiFi or Ethernet with internet access
@@ -47,7 +47,7 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
     Reboot (VGA script will reboot automatically)
     Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
 	
-*RCA*
+*RCA: For Composite-Out from the Pi's 3.5mm Port to a 15khz Display*
 
     Install Retropie and configure your desired content
     Connect to WiFi or Ethernet with internet access
@@ -62,7 +62,7 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
     Launch back into ES with the command "emulationstation"
     Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
 
-*VGA*
+*VGA: For VGA666 to 31khz Display*
 
     Install Retropie and configure your desired content
     Connect to WiFi or Ethernet with internet access
