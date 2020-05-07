@@ -1,0 +1,2 @@
+shaders = "1"
+shader0 = "shaders/lcd3x.glsl"

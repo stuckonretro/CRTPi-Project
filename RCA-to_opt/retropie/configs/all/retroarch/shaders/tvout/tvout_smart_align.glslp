@@ -1,0 +1,8 @@
+shaders = 2
+shader0 = shaders/tvout-tweaks_smart.glsl
+wrap_mode0 = clamp_to_border
+scale_type_x0 = viewport
+scale_type_y0 = source
+scale_y0 = 1.0
+shader1 = shaders/box-vert.glsl
+wrap_mode1 = clamp_to_border
