@@ -30,17 +30,19 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
 *RGB*
 
     Install Retropie and configure your desired content
+    Connect to WiFi or Ethernet with internet access
     Download the CRTPi-RGB.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RGB.zip" 
     ***WARNING: THE NEXT STEP WILL OVERWRITE GAMELIST.XML FILES AS SHOWN IN THE REPRO! BACK UP ACCORDINGLY!!***
     Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-RGB.zip"
-    Return read/write permissions to those files with the command "sudo chmod a+rw -R /opt/retropie/configs/"
     Remove the zip with the command "sudo rm CRTPi-RGB.zip"
     Power off the Pi with the command "sudo poweroff" and remove power once the green light stops blinking
     Put SD card in PC and edit /boot/config.txt to uncomment the appropriate block for your GPIO device AND comment out all other device blocks
     Install GPIO hat with RGB output (RetroTINK Ultimate, VGA666, Pi2SCART, RGB-Pi, etc.)
     Put SD card back in Pi and power on while connected to your output device
-    Drop to the command line or connect via SSH and input the command "sudo chmod a+x -R /opt/retropie/configs/all/*.sh"
-    Launch back into emulationstation (if necessary)
+    Drop to the command line or connect via SSH
+    Restore read/write access to the files you have overwritten with the command  "sudo chmod a+rw -R /opt/retropie/configs/"
+    Restore execute access to the runcommand scripts with the command "sudo chmod a+x -R /opt/retropie/configs/all/*.sh"
+    Launch back into ES with the command "emulationstation"
     **If using a VGA666-based hat** (anything other than RetroTINK) run 'Enable VGA666' from the Retropie carousel menu
     Reboot (VGA script will reboot automatically)
     Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
@@ -48,18 +50,33 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
 *RCA*
 
     Install Retropie and configure your desired content
+    Connect to WiFi or Ethernet with internet access
     Download the CRTPi-RCA.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA.zip" 
     ***WARNING: THE NEXT STEP WILL OVERWRITE GAMELIST.XML FILES AS SHOWN IN THE REPRO! BACK UP ACCORDINGLY!!***
     Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-RCA.zip"
-    Return read/write permissions to those files with the command "sudo chmod a+rw -R /opt/retropie/configs/"
     Remove the zip with the command "sudo rm CRTPi-RCA.zip"
     Reboot the Pi with the command "sudo reboot" and wait for it to return to Emulationstation
-    Drop to the command line or connect via SSH and input the command "sudo chmod a+x -R /opt/retropie/configs/all/*.sh"
+    Drop to the command line or connect via SSH
+    Restore read/write access to the files you have overwritten with the command  "sudo chmod a+rw -R /opt/retropie/configs/"
+    Restore execute access to the runcommand scripts with the command "sudo chmod a+x -R /opt/retropie/configs/all/*.sh"
     Launch back into ES with the command "emulationstation"
     Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
 
 *VGA*
 
-    Coming soon!
+    Install Retropie and configure your desired content
+    Connect to WiFi or Ethernet with internet access
+    Download the CRTPi-RCA.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-VGA.zip" 
+    ***WARNING: THE NEXT STEP WILL OVERWRITE GAMELIST.XML FILES AS SHOWN IN THE REPRO! BACK UP ACCORDINGLY!!***
+    Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-VGA.zip"
+    Remove the zip with the command "sudo rm CRTPi-VGA.zip"
+    Power off the Pi with the command "sudo poweroff" and remove power once the green light stops blinking
+    Install your VGA666 GPIO hat
+    Put SD card back in Pi and power on while connected to your VGA monitor
+    Drop to the command line or connect via SSH
+    Restore read/write access to the files you have overwritten with the command  "sudo chmod a+rw -R /opt/retropie/configs/"
+    Restore execute access to the runcommand scripts with the command "sudo chmod a+x -R /opt/retropie/configs/all/*.sh"
+    Launch back into ES with the command "emulationstation"
+    Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
     
 If you have any questions, comments, concerns, or issues -- please PM me or DM me on Reddit or post on one of the threads. Chances are, it's a "feature" not a "bug." :)
