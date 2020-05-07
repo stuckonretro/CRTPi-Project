@@ -10,9 +10,10 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
 **Required Hardware:**
 
     Raspberry Pi 3B or 3B+
-    GPIO RGB DAC Hat
-    Appropriate RGB/YPrBr cable
-    5v 2.5A Micro USB power supply
+    GPIO RGB DAC Hat & Appropriate RGB/YPrBr cable (RGB && VGA)
+    --OR--
+    XBOX 360-E A/V or Zune A/V cable (RCA)
+    5v 2.5A Micro USB power supply (Element14 recommended)
     4GB+ SD Card
 
 **Optional Prerequisites: Install these prior to installing the CRTPi zips!** 
@@ -21,7 +22,7 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
 	Install the following opt packages: scummvm, lr-beetle-wswan, lr-fbalpha2012, lr-mame2000, lr-mame2010, lr-nxengine, lr-ppsspp, lr-prboom, lr-snes9x2002, lr-tgbdual, lr-tyrquake
 	Install the following experimental packages: lr-mame2003-plus
 	Install libxpm-dev and libx11-dev: "sudo apt-get install libxpm-dev && sudo apt-get install libx11-dev"
-	Install MUNT (MT-32 Emulation) using this guide: https://retropie.org.uk/forum/topic/12549/tutorial-installing-munt-mt-32-emulation-on-rpi-3 (qtmobility-dev will fail on 4.6, this is OK)
+	Install MUNT (MT-32 Emulation) using this guide: https://retropie.org.uk/forum/topic/12549/tutorial-installing-munt-mt-32-emulation-on-rpi-3 (qtmobility-dev will fail on 4.6, this is OK) [mt32roms.zip in master is for step 10]
 
 
 **Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+ using the 4.5.1 or 4.6 offical images. Anything you overwrite is your own fault at this point!**
