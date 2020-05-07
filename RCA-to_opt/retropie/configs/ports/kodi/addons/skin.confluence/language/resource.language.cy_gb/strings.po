@@ -1,0 +1,369 @@
+# Kodi Media Center language file
+# Addon Name: Confluence
+# Addon id: skin.confluence
+# Addon Provider: Jezz_X, Team Kodi
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: Welsh (United Kingdom) (http://www.transifex.com/projects/p/kodi-main/language/cy_GB/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cy_GB\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3;\n"
+
+msgctxt "#31000"
+msgid "Change your"
+msgstr "Newid eich"
+
+msgctxt "#31001"
+msgid "GAMES"
+msgstr "GEMAU"
+
+msgctxt "#31002"
+msgid "[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure keyboard use and number of keyboard players"
+msgstr "[B]GOSODIADAU GEMAU[/B][CR][CR]Ffurfweddu cefnogaeth ailddirwyn a dewisiadau ·  Ffurfweddu'r bysellfwrdd a'r nifer o chwaraewyr bysellfwrdd"
+
+msgctxt "#31003"
+msgid "Power options"
+msgstr "Dewisiadau Pŵer"
+
+msgctxt "#31004"
+msgid "Working..."
+msgstr "Gweithio..."
+
+msgctxt "#31005"
+msgid "Hide information"
+msgstr "Cuddio'r wybodaeth"
+
+msgctxt "#31006"
+msgid "View options"
+msgstr "Gweld y dewisiadau"
+
+msgctxt "#31007"
+msgid "Video process information"
+msgstr "Gwybodaeth y prosesydd fideo"
+
+msgctxt "#31008"
+msgid "Full screen"
+msgstr "Sgrin Lawn"
+
+msgctxt "#31009"
+msgid "Total duration"
+msgstr "Cyfanswm hyd"
+
+msgctxt "#31010"
+msgid "Hardware decoding"
+msgstr "Dadgodio caledwedd"
+
+msgctxt "#31011"
+msgid "Inactive"
+msgstr "Anweithredol"
+
+msgctxt "#31012"
+msgid "Decoder"
+msgstr "Dadgodydd"
+
+msgctxt "#31013"
+msgid "Audio process information"
+msgstr "Gwybodaeth y prosesydd sain"
+
+msgctxt "#31014"
+msgid "Memory used"
+msgstr "Cof a ddefnyddir"
+
+msgctxt "#31015"
+msgid "Minute"
+msgstr "Munud"
+
+msgctxt "#31017"
+msgid "Unavailable"
+msgstr "Ddim ar gael"
+
+msgctxt "#31023"
+msgid "Playing"
+msgstr "Chwarae"
+
+msgctxt "#31024"
+msgid "Page"
+msgstr "Tudalen"
+
+msgctxt "#31025"
+msgid "Items"
+msgstr "Eitem"
+
+msgctxt "#31026"
+msgid "Misc options"
+msgstr "Dewisiadau eraill"
+
+msgctxt "#31027"
+msgid "Location"
+msgstr "Lleoliad"
+
+msgctxt "#31029"
+msgid "Fanart"
+msgstr "Celf Selogion"
+
+msgctxt "#31031"
+msgid "Pic thumbs"
+msgstr "Mân-luniau"
+
+msgctxt "#31033"
+msgid "Info"
+msgstr "Gwybodaeth"
+
+msgctxt "#31039"
+msgid "Actions"
+msgstr "Gweithredoedd"
+
+msgctxt "#31040"
+msgid "Now playing"
+msgstr "Wrthi'n chwarae"
+
+msgctxt "#31042"
+msgid "PLAYING"
+msgstr "CHWARAE"
+
+msgctxt "#31043"
+msgid "PAUSED"
+msgstr "OEDWYD"
+
+msgctxt "#31044"
+msgid "FAST FORWARD"
+msgstr "YMLAEN CYFLYM"
+
+msgctxt "#31045"
+msgid "REWIND"
+msgstr "NÔL"
+
+msgctxt "#31046"
+msgid "SEEKING"
+msgstr "CHWILIO"
+
+msgctxt "#31049"
+msgid "End time"
+msgstr "Amser gorffen"
+
+msgctxt "#31050"
+msgid "Sort: Ascending"
+msgstr "Trefnu: Esgyn"
+
+msgctxt "#31051"
+msgid "Sort: Descending"
+msgstr "Trefnu: Disgyn"
+
+msgctxt "#31055"
+msgid "Open playlist"
+msgstr "Agor rhestr chwarae"
+
+msgctxt "#31056"
+msgid "Save playlist"
+msgstr "Cadw rhestr chwarae"
+
+msgctxt "#31057"
+msgid "Close playlist"
+msgstr "Cau rhestr chwarae"
+
+msgctxt "#31058"
+msgid "System music files"
+msgstr "Ffeiliau cerddoriaeth system"
+
+msgctxt "#31059"
+msgid "Current playlist"
+msgstr "Rhestr chwarae gyfredol"
+
+msgctxt "#31101"
+msgid "Home screen options"
+msgstr "Dewisiadau sgrin Cartref"
+
+msgctxt "#31102"
+msgid "Background"
+msgstr "Cefndir"
+
+msgctxt "#31106"
+msgid "Miscellaneous options"
+msgstr "Dewisiadau amrywiol"
+
+msgctxt "#31109"
+msgid "Enable custom background"
+msgstr "Galluogi cefndir cyfaddas"
+
+msgctxt "#31110"
+msgid "Background path:"
+msgstr "Llwybr cefndir:"
+
+msgctxt "#31111"
+msgid "Hide"
+msgstr "Cuddio"
+
+msgctxt "#31112"
+msgid "Options"
+msgstr "Dewisiadau"
+
+msgctxt "#31114"
+msgid "System"
+msgstr "System"
+
+msgctxt "#31128"
+msgid "Lyrics"
+msgstr "Geiriau Caneuon"
+
+msgctxt "#31140"
+msgid "Music OSD"
+msgstr "OSD Cerddoriaeth"
+
+msgctxt "#31142"
+msgid "Settings level"
+msgstr "Lefel y gosodiadau"
+
+msgctxt "#31200"
+msgid "Shortcuts"
+msgstr "Llwybrau Byr"
+
+msgctxt "#31206"
+msgid "Found"
+msgstr "Canfod"
+
+msgctxt "#31301"
+msgid "Last updated"
+msgstr "Chwaraewyd ddiwethaf"
+
+msgctxt "#31303"
+msgid "Data provider"
+msgstr "Darparwr data"
+
+msgctxt "#31322"
+msgid "Aired"
+msgstr "Darlledwyd"
+
+msgctxt "#31326"
+msgid "Created"
+msgstr "Crëwyd"
+
+msgctxt "#31327"
+msgid "Resolution"
+msgstr "Cydraniad"
+
+msgctxt "#31329"
+msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
+msgstr "[B]Gosodwyd yr amserydd![/B] [COLOR=grey2] - Cau'r system yn awtomatig ymhen[/COLOR]"
+
+msgctxt "#31351"
+msgid "Pause"
+msgstr "Oedi"
+
+msgctxt "#31352"
+msgid "Stop"
+msgstr "Atal"
+
+msgctxt "#31354"
+msgid "Rewind"
+msgstr "Nôl"
+
+msgctxt "#31355"
+msgid "Movie menu"
+msgstr "Dewislen Ffilm"
+
+msgctxt "#31360"
+msgid "Watch as 2D"
+msgstr "Gwylio mewn 2D"
+
+msgctxt "#31361"
+msgid "Change mode"
+msgstr "Newid modd"
+
+msgctxt "#31362"
+msgid "Enabled"
+msgstr "Galluogwyd"
+
+msgctxt "#31390"
+msgid "Skin default"
+msgstr "Croen rhagosodedig"
+
+msgctxt "#31392"
+msgid "Arial based"
+msgstr "Seileidig ar Ariel"
+
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Is deitlau lleol ar gael"
+
+msgctxt "#31420"
+msgid "Login"
+msgstr "Mewngofnodi"
+
+msgctxt "#31422"
+msgid "Show or hide the login screen at startup."
+msgstr "Dangos neu guddio'r sgrin mewngofnodi wrth gychwyn."
+
+msgctxt "#31423"
+msgid "Select the profile that will be used at startup when the login screen is disabled."
+msgstr "Dewiswch y proffil fydd yn cael ei ddefnyddio wrth gychwyn pan fydd y sgrin mewngofnodi wedi ei anablu."
+
+msgctxt "#31502"
+msgid "TV"
+msgstr "Teledu"
+
+msgctxt "#31506"
+msgid "Available[CR]Groups"
+msgstr "Grwpiau[CR]ar Gael"
+
+msgctxt "#31905"
+msgid "Forecast"
+msgstr "Rhagolygon"
+
+msgctxt "#31909"
+msgid "Fetching forecast info..."
+msgstr "Estyn gwybodaeth rhagolygon..."
+
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Mapio"
+
+msgctxt "#31950"
+msgid "WEATHER"
+msgstr "TYWYDD"
+
+msgctxt "#31951"
+msgid "PICTURES"
+msgstr "LLUNIAU"
+
+msgctxt "#31952"
+msgid "TV"
+msgstr "Teledu"
+
+msgctxt "#31953"
+msgid "VIDEOS"
+msgstr "FIDEO"
+
+msgctxt "#31954"
+msgid "MOVIES"
+msgstr "FFILMIAU"
+
+msgctxt "#31955"
+msgid "TV SHOWS"
+msgstr "SIOEAU TELEDU"
+
+msgctxt "#31956"
+msgid "MUSIC"
+msgstr "CERDDORIAETH"
+
+msgctxt "#31958"
+msgid "PLAY DISC"
+msgstr "CHWARAE DISG"
+
+msgctxt "#31959"
+msgid "SYSTEM"
+msgstr "SYSTEM"
+
+msgctxt "#31960"
+msgid "RADIO"
+msgstr "RADIO"
+
+msgctxt "#31963"
+msgid "Profile name"
+msgstr "Enw proffil"
