@@ -11,7 +11,7 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
 
     Raspberry Pi 3B or 3B+
     GPIO RGB DAC Hat & Appropriate RGB/YPrBr cable (RGB && VGA)
-    	OR
+    --OR--
     XBOX 360-E A/V or Zune A/V cable (RCA)
     5v 2.5A Micro USB power supply (Element14 recommended)
     4GB+ SD Card
