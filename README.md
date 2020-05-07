@@ -1,5 +1,6 @@
 # CRTPi-Project
 *A Vanilla+ experience for CRT gamers utilizing Retropie!*
+_____
 
 Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, Artemio Urbina, Ruckage, ChipsnBlip, Podunk_Labs, kitty666cats, and anyone I've missed! Thank you for the input, support, resources, and help along the way!
 
@@ -122,6 +123,7 @@ You get the jist. It doesn't need an extension, but should match the rom name in
 
 _____
 
-If you have any questions, comments, concerns, or issues -- please PM me or DM me on Reddit or post on one of the threads. Chances are, it's a "feature" not a "bug." :)
+**Final Thoughts:**
 
+If you have any questions, comments, concerns, or issues -- please PM me or DM me on Reddit or post on one of the threads. Chances are, it's a "feature" not a "bug." :)
 _____
