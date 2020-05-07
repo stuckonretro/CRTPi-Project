@@ -25,7 +25,7 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
 	Install MUNT (MT-32 Emulation) using this guide: https://retropie.org.uk/forum/topic/12549/tutorial-installing-munt-mt-32-emulation-on-rpi-3 (qtmobility-dev will fail on 4.6, this is OK) [mt32roms.zip in master is for step 10]
 
 
-**Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+ using the 4.5.1 or 4.6 offical images. Anything you overwrite is your own fault at this point!**
+**Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+ using the 4.6 offical image (Or 4.5.1 updated to 4.6). Anything you overwrite is your own fault at this point!**
 
 *RGB*
 
