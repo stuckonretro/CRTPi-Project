@@ -1,81 +1,64 @@
 # CRTPi-Project
-A Vanilla+ experience for CRT gamers utilizing Retropie with RGB Hats!
+*A Vanilla+ experience for CRT gamers utilizing Retropie!*
 
 Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, Ruckage, ChipsnBlip, Podunk_Labs, kitty666cats, and anyone I've missed! Thank you for the input, support, resources, and help along the way!
 
-https://redd.it/fosbir
+**Major Changelogs and Features can be viewed in the pinned posts here:**
 
-Required Hardware:
+    https://reddit.com/r/u_erantyint
+
+**Required Hardware:**
 
     Raspberry Pi 3B or 3B+
     GPIO RGB DAC Hat
     Appropriate RGB/YPrBr cable
     5v 2.5A Micro USB power supply
-    8GB+ SD Card
+    4GB+ SD Card
 
-Optional Prerequisites:
+**Optional Prerequisites: Install these prior to installing the CRTPi zips!** 
 
 	Install the following theme: /ruckage/snes-mini/
 	Install the following opt packages: scummvm, lr-beetle-wswan, lr-fbalpha2012, lr-mame2000, lr-mame2010, lr-nxengine, lr-ppsspp, lr-prboom, lr-snes9x2002, lr-tgbdual, lr-tyrquake
 	Install the following experimental packages: lr-mame2003-plus
+	Install libxpm-dev and libx11-dev: "sudo apt-get install libxpm-dev && sudo apt-get install libx11-dev"
+	Install MUNT (MT-32 Emulation) using this guide: https://retropie.org.uk/forum/topic/12549/tutorial-installing-munt-mt-32-emulation-on-rpi-3 (qtmobility-dev will fail on 4.6, this is OK)
 
 
-Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+. Anything you overwrite is your own fault at this point!
+**Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+ using the 4.5.1 or 4.6 offical images. Anything you overwrite is your own fault at this point!**
+
+*RGB*
 
     Install Retropie and configure your desired content
-    Download the CRTPi-Project.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-Project.zip" 
+    Download the CRTPi-RGB.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RGB.zip" 
     ***WARNING: THE NEXT STEP WILL OVERWRITE GAMELIST.XML FILES AS SHOWN IN THE REPRO! BACK UP ACCORDINGLY!!***
-    Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-Project.zip"\
+    Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-RGB.zip"
     Return read/write permissions to those files with the command "sudo chmod a+rw -R /opt/retropie/configs/"
-    Remove the zip with the command "sudo rm CRTPi-Project.zip"
+    Remove the zip with the command "sudo rm CRTPi-RGB.zip"
     Power off the Pi with the command "sudo poweroff" and remove power once the green light stops blinking
     Put SD card in PC and edit /boot/config.txt to uncomment the appropriate block for your GPIO device AND comment out all other device blocks
     Install GPIO hat with RGB output (RetroTINK Ultimate, VGA666, Pi2SCART, RGB-Pi, etc.)
     Put SD card back in Pi and power on while connected to your output device
-    Drop to the command line or connect via SSH and input the command "sudo chmod +x -R /opt/retropie/configs/all/*.sh"
+    Drop to the command line or connect via SSH and input the command "sudo chmod a+x -R /opt/retropie/configs/all/*.sh"
     Launch back into emulationstation (if necessary)
     **If using a VGA666-based hat** (anything other than RetroTINK) run 'Enable VGA666' from the Retropie carousel menu
     Reboot (VGA script will reboot automatically)
     Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
 	
-Changelog: v2.0 for 888 & 666 03/25/2020
+*RCA*
 
-    Disabled Runahead for lr-snes9x (current fork)
-    Completely retooled runcommand-onstart script to change system-by-system resolutions based on 256x240 or 320x240 integers
-    Fixed issue where arcade Retroarch emulators were ignoring per-game configs created by runcommand script
-    Merged 888 and 666 images into one multi-purpose configuration
-    Added configuration blocks for all the popular RGB DAC hats inside /boot/config.txt to be set before first boot
-    Added "Enable Retrotink" and "Enable VGA666" scripts to the Retropie menu to allow on-the-fly configuration for all hardware
-    Disabled Threaded Video in Retroarch
-    Enabled horizontal overscan crop for lr-FCEUUM and removed bilinear filtering
-    Removed all enhanced resolution and interlacing modes from lr-PCSXReARMed and removed bilinear filtering
-    Retooled all launch images and handheld overlays to handle increase to 2048px
-    Included new metadata images for the 240p Test Suite roms from /u/chipsnblip
-    Added 160p Test Suite for mGBA along side the original mGBA Test Suite
-    The following Retroarch systems launch in 2048x240: SNES, NES, FDS, VB, LYNX, WS, WSC, NGP, NGPC, GB, GBC, GBA, PSP, ZXSPEC, PCE, PCE-CD, MS, GG, SG1000
-    The following Retroarch systems launch in 1920x240: MD, SEGACD, 32X, PSX, ATARI800/2600/5200, AMIGA, N64, ARCADE, FBA, NEOGEO, MAME-LR, CAVESTORY, QUAKE, DOOM
-    All other Retroarch systems launch in a catch-all 1600x240 resolution
+    Install Retropie and configure your desired content
+    Download the CRTPi-RCA.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA.zip" 
+    ***WARNING: THE NEXT STEP WILL OVERWRITE GAMELIST.XML FILES AS SHOWN IN THE REPRO! BACK UP ACCORDINGLY!!***
+    Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-RCA.zip"
+    Return read/write permissions to those files with the command "sudo chmod a+rw -R /opt/retropie/configs/"
+    Remove the zip with the command "sudo rm CRTPi-RCA.zip"
+    Reboot the Pi with the command "sudo reboot" and wait for it to return to Emulationstation
+    Drop to the command line or connect via SSH and input the command "sudo chmod a+x -R /opt/retropie/configs/all/*.sh"
+    Launch back into ES with the command "emulationstation"
+    Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
 
-What is Different?
+*VGA*
 
-    Custom /boot/config.txt settings for DPI output and custom HDMI timings
-    Optional overclock values in /boot/config.txt for Pi2 & Pi3B (disabled by default)
-    Modified Michael Vencio's Runcommand “On Start” and “On End” scripts to automatically change the resolution system-by-system
-    Modified Runcommand "On Start" script to allow creation of game-specific arcade configs for arcade/fba/mame-libretro/neogeo
-    NTSC @ 60hz 320x240 resolution for Emulationstation and DOSBox/ScummVM/Kodi
-    NTSC @ 60hz 2048x240, 1920x240, and 1600x240 resolution for Retroarch
-    Per-system custom refresh rates for Retroarch
-    Single-frame Run Ahead enabled for many 8-bit & 16-bit consoles and handhelds for Retroarch
-    Preloaded with free 240p test suites for multiple consoles with art by /u/chipsnblip
-    Preloaded with various 4:3 splashscreens from the RPiF download
-    Custom 4:3 Arcade DOJ "Winners DO Use Drugs" splash screen.
-    Preloaded with Ruckage's runcommand launching screens for supported systems
-    Preconfigured MOST Retroarch emulators for proper Integer Scale SuperRes
-    Retroarch FCEUmm (NES) Emulator preconfigured for 8:7 vert overscan crop enabled w/ composite-direct-fbx palette
-    Retroarch Gambatte (GB/GBC) emulator preset to Super Game Boy (SGB2 auto coloration) mode with Integer Scale Overlay
-    Retroarch mGBA (GBA) emulator preset to Game Boy Player mode with Integer Scale Overlay
-    Preloaded with Ruckage's RetroPie menu icon
-    Custom ScummVM system artwork for Ruckage's snes-mini theme
-    Emulationstation systems ordered chronologically instead of alphabetically
-    Emulationstation preconfigured with best settings for analog A/V including best settings for video preview screensavers
-    Custom Retropie menu scripts for switching between Retrotink and VGA666-based hardware
+    Coming soon!
+    
+If you have any questions, comments, concerns, or issues -- please PM me or DM me on Reddit or post on one of the threads. Chances are, it's a "feature" not a "bug." :)
