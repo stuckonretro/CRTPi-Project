@@ -1,7 +1,7 @@
 # CRTPi-Project
 *A Vanilla+ experience for CRT gamers utilizing Retropie!*
 
-Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, Ruckage, ChipsnBlip, Podunk_Labs, kitty666cats, and anyone I've missed! Thank you for the input, support, resources, and help along the way!
+Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, Artemio Urbina, Ruckage, ChipsnBlip, Podunk_Labs, kitty666cats, and anyone I've missed! Thank you for the input, support, resources, and help along the way!
 
 **Major Changelogs and Features can be viewed in the pinned posts here:**
 
