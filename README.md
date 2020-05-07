@@ -15,6 +15,8 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
     XBOX 360-E A/V or Zune A/V cable (RCA)
     5v 2.5A Micro USB power supply (Element14 recommended)
     4GB+ SD Card
+    
+_____
 
 **Optional Prerequisites: Install these prior to installing the CRTPi zips!** 
 
@@ -24,6 +26,7 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
 	Install libxpm-dev and libx11-dev: "sudo apt-get install libxpm-dev && sudo apt-get install libx11-dev"
 	Install MUNT (MT-32 Emulation) using this guide: https://retropie.org.uk/forum/topic/12549/tutorial-installing-munt-mt-32-emulation-on-rpi-3 (qtmobility-dev will fail on 4.6, this is OK) [mt32roms.zip in master is for step 10]
 
+_____
 
 **Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+ using the 4.6 offical image (Or 4.5.1 updated to 4.6). Anything you overwrite is your own fault at this point!**
 
@@ -79,7 +82,7 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
     Launch back into ES with the command "emulationstation"
     Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
     
-If you have any questions, comments, concerns, or issues -- please PM me or DM me on Reddit or post on one of the threads. Chances are, it's a "feature" not a "bug." :)
+_____
 
 The RGB and VGA forks are now utilizing Snap-Shader, plus a newly-enhanced runcommand-onstart script, with provision for *user-specified per-game configuration*! 
 
@@ -116,3 +119,9 @@ Not only does the new script carry forward the per-core scripting for 2048x / 19
     all
 
 You get the jist. It doesn't need an extension, but should match the rom name including punctuation. This forces them to launch in 2048x240p instead of the default 1920x240p, or the other way round. This gives the end user full control on a game-per-game basis over the horizontal integer. You'll still need to write a retroarch game config to override the defaults there, but this at least gets you the right field. For games with odd/shifting vertical resolutions (like Chrono Cross, Battle Arena Toshinden, Castlevania SotN, etc.), a single pass of snap-shader is applied (snap-basic, nearest neighbor filtering, and "don't care" scale).
+
+_____
+
+If you have any questions, comments, concerns, or issues -- please PM me or DM me on Reddit or post on one of the threads. Chances are, it's a "feature" not a "bug." :)
+
+_____
