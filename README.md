@@ -27,6 +27,7 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
 **Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+ using the 4.5.1 or 4.6 offical images. Anything you overwrite is your own fault at this point!**
 
 *RGB*
+
     Install Retropie and configure your desired content
     Download the CRTPi-RGB.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RGB.zip" 
     ***WARNING: THE NEXT STEP WILL OVERWRITE GAMELIST.XML FILES AS SHOWN IN THE REPRO! BACK UP ACCORDINGLY!!***
@@ -44,6 +45,7 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
     Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
 	
 *RCA*
+
     Install Retropie and configure your desired content
     Download the CRTPi-RCA.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA.zip" 
     ***WARNING: THE NEXT STEP WILL OVERWRITE GAMELIST.XML FILES AS SHOWN IN THE REPRO! BACK UP ACCORDINGLY!!***
@@ -56,6 +58,7 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
     Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
 
 *VGA*
+
     Coming soon!
     
 If you have any questions, comments, concerns, or issues -- please PM me or DM me on Reddit or post on one of the threads. Chances are, it's a "feature" not a "bug." :)
