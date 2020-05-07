@@ -1,13 +1,13 @@
 # CRTPi-Project
-A Vanilla+ experience for CRT gamers utilizing Retropie!
+*A Vanilla+ experience for CRT gamers utilizing Retropie!*
 
 Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, Ruckage, ChipsnBlip, Podunk_Labs, kitty666cats, and anyone I've missed! Thank you for the input, support, resources, and help along the way!
 
-Major Changelogs and Features can be viewed in the pinned posts here:
+**Major Changelogs and Features can be viewed in the pinned posts here:**
 
     https://reddit.com/r/u_erantyint
 
-Required Hardware:
+**Required Hardware:**
 
     Raspberry Pi 3B or 3B+
     GPIO RGB DAC Hat
@@ -15,7 +15,7 @@ Required Hardware:
     5v 2.5A Micro USB power supply
     4GB+ SD Card
 
-Optional Prerequisites:
+**Optional Prerequisites: Install these prior to installing the CRTPi zips!** 
 
 	Install the following theme: /ruckage/snes-mini/
 	Install the following opt packages: scummvm, lr-beetle-wswan, lr-fbalpha2012, lr-mame2000, lr-mame2010, lr-nxengine, lr-ppsspp, lr-prboom, lr-snes9x2002, lr-tgbdual, lr-tyrquake
@@ -24,7 +24,7 @@ Optional Prerequisites:
 	Install MUNT (MT-32 Emulation) using this guide: https://retropie.org.uk/forum/topic/12549/tutorial-installing-munt-mt-32-emulation-on-rpi-3 (qtmobility-dev will fail on 4.6, this is OK)
 
 
-Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+ using the 4.5.1 or 4.6 offical images. Anything you overwrite is your own fault at this point!
+**Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+ using the 4.5.1 or 4.6 offical images. Anything you overwrite is your own fault at this point!**
 
 *RGB*
 
@@ -56,5 +56,9 @@ Instructions: This is recommended to be installed on a fresh Retropie install on
     Drop to the command line or connect via SSH and input the command "sudo chmod a+x -R /opt/retropie/configs/all/*.sh"
     Launch back into ES with the command "emulationstation"
     Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
-	
+
+*VGA*
+
+    Coming soon!
+    
 If you have any questions, comments, concerns, or issues -- please PM me or DM me on Reddit or post on one of the threads. Chances are, it's a "feature" not a "bug." :)
