@@ -80,3 +80,39 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
     Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
     
 If you have any questions, comments, concerns, or issues -- please PM me or DM me on Reddit or post on one of the threads. Chances are, it's a "feature" not a "bug." :)
+
+The RGB and VGA forks are now utilizing Snap-Shader, plus a newly-enhanced runcommand-onstart script, with provision for *user-specified per-game configuration*! 
+
+**Here's the new script:**
+
+    https://github.com/crtpi/CRTPi-Project/blob/master/RGB-to_opt/retropie/configs/all/runcommand-onstart.sh
+
+**Here's information about Snap-Shader:**
+
+    https://github.com/ektgit/snap-shader-240p
+
+**And here's a quick rundown on how it works:**
+
+Not only does the new script carry forward the per-core scripting for 2048x / 1920x / and 1600x resolutions -- but adds per-game scripting by adding a text file to the system config and naming the rom(s) within the file. This allows you to force 2048x on a system that defaults to 1920x, and vise versa. This is especially useful for PSX, FDS, PCE/PCE-CD, and MAME for the few games that are 256 or 512 wide. Below are some example config files:**
+
+**/opt/retropie/conifgs/psx/256.txt**
+
+    Brave Prove
+    Castlevania - Symphony of the Night
+    Crash Bandicoot
+    Final Fantasy Origins
+    Final Fantasy Tactics
+
+**/opt/retropie/conifgs/megadrive/256.txt**
+
+    Bubble And Squeak
+    Bubsy in - Claws Encounters of the Furred Kind 
+    Bugs Bunny in Double Trouble 
+    Caesars Palace 
+    Captain America and the Avengers 
+
+**/opt/retropie/conifgs/virtualboy/320.txt**
+
+    all
+
+You get the jist. It doesn't need an extension, but should match the rom name including punctuation. This forces them to launch in 2048x240p instead of the default 1920x240p, or the other way round. This gives the end user full control on a game-per-game basis over the horizontal integer. You'll still need to write a retroarch game config to override the defaults there, but this at least gets you the right field. For games with odd/shifting vertical resolutions (like Chrono Cross, Battle Arena Toshinden, Castlevania SotN, etc.), a single pass of snap-shader is applied (snap-basic, nearest neighbor filtering, and "don't care" scale).
