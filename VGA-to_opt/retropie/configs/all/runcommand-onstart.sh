@@ -209,16 +209,14 @@ if [[ "$emul_lr" == "lr" ]]; then
 		fbset -depth 8 && fbset -depth 16 -xres 1280 -yres 720 > /dev/null #VGA666 16b depth
 		tvservice -s > /dev/null
 		
-#	# change timings for for 480i/P to 2048x480p
-#	elif
-#		[[ "$system" == "psx" ]] || 
-#    	[[ "$system" == "dreamcast" ]] ; then
-#		vcgencmd hdmi_timings 2048 1 180 202 300 480 1 6 10 28 0 0 0 60 0 85909090 1 > /dev/null #Retrotink 2048x480p@60hz Timing
-#		vservice -e "DMT 87" > /dev/null
-#		sleep 1 > /dev/null
-#		fbset -depth 8 && fbset -depth 16 -xres 2048 -yres 480 > /dev/null #VGA666 16b depth
-#		tvservice -s > /dev/null
-
+	# change timings for for 480i/P to 2048x480p
+	#elif
+    	#[[ "$system" == "dreamcast" ]] ; then
+		#vcgencmd hdmi_timings 2048 1 180 202 300 480 1 6 10 28 0 0 0 60 0 85909090 1 > /dev/null #Retrotink 2048x480p@60hz Timing
+		#vservice -e "DMT 87" > /dev/null
+		#sleep 1 > /dev/null
+		#fbset -depth 8 && fbset -depth 16 -xres 2048 -yres 480 > /dev/null #VGA666 16b depth
+		#tvservice -s > /dev/null
 	# otherwise default to 1600x240p
 	else
 		vcgencmd hdmi_timings 1600 1 95 157 182 240 1 4 3 15 0 0 0 120 0 64000000‬ 1 > /dev/null #VGA666 Generic 1600x240p@120hz Timing
