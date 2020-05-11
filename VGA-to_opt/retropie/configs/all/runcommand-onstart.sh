@@ -178,7 +178,7 @@ if [[ "$emul_lr" == "lr" ]]; then
 		[[ "$system" == "segacd" ]] || 
 		[[ "$system" == "sega32x" ]] || 
 		[[ "$system" == "psx" ]] || 
-		[[ "$system" == "dreamcast" ]] || 
+		#[[ "$system" == "dreamcast" ]] || 
 		[[ "$system" == "saturn" ]] || 
 		[[ "$system" == "atari2600" ]] || 
 		[[ "$system" == "atari5200" ]] || 
