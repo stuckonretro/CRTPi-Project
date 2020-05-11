@@ -1,0 +1,3 @@
+shaders = 1
+shader0 = shaders/tvout-tweaks_sharp.glsl
+wrap_mode0 = clamp_to_border

@@ -1,0 +1,13 @@
+shaders = 2
+shader0 = shaders/imgborder-720.glsl
+scale_type0 = absolute
+scale_x0 = 256
+scale_y0 = 144
+shader1 = ../shaders/retro-v2.glsl
+wrap_mode1 = clamp_to_border
+parameters = box_scale;in_res_x;in_res_y
+box_scale = 1.0
+in_res_x = 160.0
+in_res_y = 144.0
+textures = BORDER
+BORDER = /opt/retropie/configs/gb/overlay_720.png

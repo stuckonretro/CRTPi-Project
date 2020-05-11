@@ -1,0 +1,2 @@
+if [[ "$1" = @("atarilynx"|"gamegear"|"gb"|"gba"|"gbc"|"ngp"|"ngpc"|"wonderswan"|"wonderswancolor") ]]; then echo border > /opt/retropie/configs/$1/default; cp /opt/retropie/configs/$1/retroarch_border.cfg /opt/retropie/configs/$1/retroarch.cfg; fi > /tmp/null
+exit 1
