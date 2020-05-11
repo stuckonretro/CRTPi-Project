@@ -76,7 +76,6 @@ _____
 *OPTIONAL: RCA Arcade Config Pack*
 
     Download the CRTPi-RCA_ArcadePack.zip into your root folder (cd /) with the command "https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA_ArcadePack.zip"
-    PAL: Download the CRTPi-RCA_PAL.zip into your root folder (cd /) with the command "https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA_PAL.zip"
     Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-RCA_ArcadePack.zip"
     Remove the zip with the command "sudo rm CRTPi-RCA_ArcadePack.zip"
     Restore read/write access to the files you have overwritten with the command  "sudo chmod a+rw -R /opt/retropie/configs/"
