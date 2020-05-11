@@ -61,16 +61,25 @@ _____
 
     Install Retropie and configure your desired content
     Connect to WiFi or Ethernet with internet access
-    Download the CRTPi-RCA.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA.zip" 
+    NTSC: Download the CRTPi-RCA_NTSC.zip into your root folder (cd /) with the command "https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA_NTSC.zip"
+    PAL: Download the CRTPi-RCA_PAL.zip into your root folder (cd /) with the command "https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA_PAL.zip"
     ***WARNING: THE NEXT STEP WILL OVERWRITE GAMELIST.XML FILES AS SHOWN IN THE REPRO! BACK UP ACCORDINGLY!!***
-    Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-RCA.zip"
-    Remove the zip with the command "sudo rm CRTPi-RCA.zip"
+    Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-RCA_NTSC.zip" [OR "sudo unzip -o -q CRTPi-RCA_PAL.zip"]
+    Remove the zip with the command "sudo rm CRTPi-RCA_NTSC.zip" [OR "sudo rm CRTPi-RCA_PAL.zip"]
     Reboot the Pi with the command "sudo reboot" and wait for it to return to Emulationstation
     Drop to the command line or connect via SSH
     Restore read/write access to the files you have overwritten with the command  "sudo chmod a+rw -R /opt/retropie/configs/"
     Restore execute access to the runcommand scripts with the command "sudo chmod a+x -R /opt/retropie/configs/all/*.sh"
     Launch back into ES with the command "emulationstation"
     Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
+    
+*OPTIONAL: RCA Arcade Config Pack*
+
+    Download the CRTPi-RCA_ArcadePack.zip into your root folder (cd /) with the command "https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA_ArcadePack.zip"
+    PAL: Download the CRTPi-RCA_PAL.zip into your root folder (cd /) with the command "https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA_PAL.zip"
+    Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-RCA_ArcadePack.zip"
+    Remove the zip with the command "sudo rm CRTPi-RCA_ArcadePack.zip"
+    Restore read/write access to the files you have overwritten with the command  "sudo chmod a+rw -R /opt/retropie/configs/"
 
 *VGA: For VGA666 to 31khz Display*
 
