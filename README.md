@@ -8,6 +8,12 @@ Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, 
 
     https://reddit.com/r/u_erantyint
 
+**User Photo Galleries (Photos from Historical Versions):**
+
+* RGB: https://photos.google.com/share/AF1QipNjCNQs45Gza9YDe-WWCmIQZWPUEbVvt8PoIdKRNrBiEPedw-yl6r5g8jKpWkfJWA?key=QWtsS3FBWWo0aHU5M1hlRDVvU3JxQVNsSVoxSVdB
+* RCA: https://photos.google.com/share/AF1QipO8q3LzMQIlexAD0kgEGIArp5Ax8Y9SMxCqoiaouZKDKbcJO3AN-YS7YuaykX1J7A?key=LXJMbWZheG8yamxNOGwxLVRXOWlwRzRia2R6a2FB
+* VGA: https://photos.google.com/share/AF1QipNO6y2Vjt0jFrwY0kYbgsD-R2-KjNFuaDqKrFZQsCebWi6O1nZAF4ozajdksLw7KQ?key=WGVHbWMxLXd2ZlFqbFhGZ3BLRjZTSE42S1FNVFdB
+
 **Required Hardware:**
 
     Raspberry Pi 3B or 3B+
@@ -22,10 +28,10 @@ _____
 **Optional Prerequisites: Install these prior to installing the CRTPi zips!** 
 
 	Install the following theme: /ruckage/snes-mini/
-	Install the following opt packages: scummvm, lr-beetle-wswan, lr-fbalpha2012, lr-mame2000, lr-mame2010, lr-nxengine, lr-ppsspp, lr-prboom, lr-snes9x2002, lr-tgbdual, lr-tyrquake
+	Install the following opt packages: scummvm, lr-beetle-wswan, lr-fbalpha2012, lr-mame2000, lr-mame2010, lr-nxengine, lr-ppsspp, lr-prboom, lr-snes9x2002, lr-tgbdual, lr-tyrquake, scraper, skyscraper
 	Install the following experimental packages: lr-mame2003-plus
 	Install libxpm-dev and libx11-dev: "sudo apt-get install libxpm-dev && sudo apt-get install libx11-dev"
-	Install MUNT (MT-32 Emulation) using this guide: https://retropie.org.uk/forum/topic/12549/tutorial-installing-munt-mt-32-emulation-on-rpi-3 (qtmobility-dev will fail on 4.6, this is OK) [mt32roms.zip in master is for step 10]
+	Install MUNT (MT-32 Emulation) using this guide: https://retropie.org.uk/forum/topic/12549/tutorial-installing-munt-mt-32-emulation-on-rpi-3 (Remove 'qtmobility-dev' from step 1) (mt32roms.zip in master is for step 10)
 
 _____
 
