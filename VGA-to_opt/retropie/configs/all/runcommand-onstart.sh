@@ -227,8 +227,10 @@ if [[ "$emul_lr" == "lr" ]]; then
 	fi
 
 else
-# for non-libretro emulators switch to 320x240p
-	vcgencmd hdmi_timings 320 1 16 30 34 240 1 2 3 22 0 0 0 60 0 6400000 1 > /dev/null #VGA666 320x240p Timing
-	tvservice -c "DMT 87" 
-	fbset -depth 8 && fbset -depth 16 -xres 320 -yres 240 > /dev/null #VGA666 16b depth
+# for non-libretro emulators switch to 640x480p@65hz
+	vcgencmd hdmi_timings 640 1 56 56 80 480 0 1 3 25 0 0 0 65 0 36000000 1  > /dev/null #VGA666 640x480p@65hz Timing
+	tvservice -e "DMT 87" > /dev/null
+	sleep 1 > /dev/
+	fbset -depth 8 && fbset -depth 16 -xres 640 -yres 480 > /dev/null
+	tvservice -s > /dev/null
 fi
