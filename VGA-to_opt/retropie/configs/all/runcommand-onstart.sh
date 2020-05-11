@@ -132,12 +132,20 @@ if [[ "$emul_lr" == "lr" ]]; then
 	# get the system name
 	system=$1
 	# change timings for 256.txt to 2048x240p
-	if { ! echo "$3" | grep -q -wi "$ThreeTwenty" || echo "$ThreeTwenty" | grep -q empty; } && ! echo "$ThreeTwenty" | grep -q -xi "all" && { echo "$3" | grep -q -wi "$TwoFiveSix" || echo "$TwoFiveSix" | grep -q empty; }; then > /dev/null
-			vcgencmd hdmi_timings 2048 1 180 202 300 240 1 3 5 14 0 0 0 120 0 85909090 1 > /dev/null #Retrotink 2048x240p@120hz Timing
-			tvservice -e "DMT 87" > /dev/null
-			sleep 1 > /dev/null
-			fbset -depth 8 && fbset -depth 16 -xres 2048 -yres 240 > /dev/null #VGA666 16b depth
-			tvservice -s > /dev/null
+	if { ! echo "$3" | grep -q -wi "$ThreeTwenty" || echo "$ThreeTwenty" | grep -q empty; } && ! echo "$ThreeTwenty" | grep -q -xi "all" && { echo "$3" | grep -q -wi "$TwoFiveSix"; } then > /dev/null
+		vcgencmd hdmi_timings 2048 1 180 202 300 240 1 3 5 14 0 0 0 120 0 85909090 1 > /dev/null #Retrotink 2048x240p@120hz Timing
+		tvservice -e "DMT 87" > /dev/null
+		sleep 1 > /dev/null
+		fbset -depth 8 && fbset -depth 16 -xres 2048 -yres 240 > /dev/null #VGA666 16b depth
+		tvservice -s > /dev/null
+	# change timings for 320.txt to 1920x240p
+	elif { ! echo "$3" | grep -q -wi "$TwoFiveSix" || echo "$TwoFiveSix" | grep -q empty; } && ! echo "$TwoFiveSix" | grep -q -xi "all" && { echo "$3" | grep -q -wi "$ThreeTwenty"; } then > /dev/null
+#		vcgencmd hdmi_timings 1920 1 152 247 280 240 1 3 7 12 0 0 0 120 0 81720000‬ 1 > /dev/null #Pi2SCART Generic 1920x240p@120hz Timing Original
+		vcgencmd hdmi_timings 1920 1 167 247 265 240 1 3 7 12 0 0 0 120 0 81720000‬ 1 > /dev/null #Pi2SCART Generic 1920x240p@120hz Timing Adjusted
+		tvservice -e "DMT 87" > /dev/null
+		sleep 1 > /dev/null
+		fbset -depth 8 && fbset -depth 16 -xres 1920 -yres 240 > /dev/null #VGA666 16b depth
+		tvservice -s > /dev/null
 	# change timings for for 480i/P to 2048x480p
 	#elif
     	#[[ "$system" == "dreamcast" ]] ; then
