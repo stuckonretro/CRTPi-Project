@@ -61,8 +61,8 @@ _____
 
     Install Retropie and configure your desired content
     Connect to WiFi or Ethernet with internet access
-    NTSC: Download the CRTPi-RCA_NTSC.zip into your root folder (cd /) with the command "https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA_NTSC.zip"
-    PAL: Download the CRTPi-RCA_PAL.zip into your root folder (cd /) with the command "https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA_PAL.zip"
+    NTSC: Download the CRTPi-RCA_NTSC.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA_NTSC.zip"
+    PAL: Download the CRTPi-RCA_PAL.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA_PAL.zip"
     ***WARNING: THE NEXT STEP WILL OVERWRITE GAMELIST.XML FILES AS SHOWN IN THE REPRO! BACK UP ACCORDINGLY!!***
     Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-RCA_NTSC.zip" [OR "sudo unzip -o -q CRTPi-RCA_PAL.zip"]
     Remove the zip with the command "sudo rm CRTPi-RCA_NTSC.zip" [OR "sudo rm CRTPi-RCA_PAL.zip"]
@@ -75,7 +75,7 @@ _____
     
 *OPTIONAL: RCA Arcade Config Pack*
 
-    Download the CRTPi-RCA_ArcadePack.zip into your root folder (cd /) with the command "https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA_ArcadePack.zip"
+    Download the CRTPi-RCA_ArcadePack.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA_ArcadePack.zip"
     Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-RCA_ArcadePack.zip"
     Remove the zip with the command "sudo rm CRTPi-RCA_ArcadePack.zip"
     Restore read/write access to the files you have overwritten with the command  "sudo chmod a+rw -R /opt/retropie/configs/"
@@ -84,7 +84,7 @@ _____
 
     Install Retropie and configure your desired content
     Connect to WiFi or Ethernet with internet access
-    Download the CRTPi-RCA.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-VGA.zip" 
+    Download the CRTPi-VGA.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-VGA.zip" 
     ***WARNING: THE NEXT STEP WILL OVERWRITE GAMELIST.XML FILES AS SHOWN IN THE REPRO! BACK UP ACCORDINGLY!!***
     Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-VGA.zip"
     Remove the zip with the command "sudo rm CRTPi-VGA.zip"
