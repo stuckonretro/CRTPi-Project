@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./240pee.nes</path>
+		<name>240pee Test Suite v0.08</name>
+		<image>./images/240pee-image.png</image>
+		<rating>1.0</rating>
+		<releasedate>20150101T000000</releasedate>
+		<developer>Artemio Urbina</developer>
+		<publisher>Damian Yerrick</publisher>
+		<genre>Test</genre>
+		<playcount>19</playcount>
+		<lastplayed>20191022T163923</lastplayed>
+	</game>
+	<game>
+		<path>./Metroid.zip</path>
+		<name>Metroid</name>
+		<playcount>1</playcount>
+		<lastplayed>20200320T145903</lastplayed>
+	</game>
+	<game>
+		<path>./Super Mario Bros..zip</path>
+		<name>Super Mario Bros.</name>
+		<playcount>1</playcount>
+		<lastplayed>20200320T151121</lastplayed>
+	</game>
+	<game>
+		<path>./Mega Man 4.zip</path>
+		<name>Mega Man 4</name>
+		<playcount>3</playcount>
+		<lastplayed>20200325T002355</lastplayed>
+	</game>
+	<game>
+		<path>./Super Mario Bros. 3.zip</path>
+		<name>Super Mario Bros. 3</name>
+		<playcount>2</playcount>
+		<lastplayed>20200324T232832</lastplayed>
+	</game>
+</gameList>
