@@ -51,7 +51,7 @@ _____
     Put SD card back in Pi and power on while connected to your output device
     Drop to the command line or connect via SSH
     Restore read/write access to the files you have overwritten with the command  "sudo chmod a+rw -R /opt/retropie/configs/"
-    Restore execute access to the runcommand scripts with the command "sudo chmod a+x -R /opt/retropie/configs/all/*.sh"
+    Restore execute access to the runcommand scripts with the command "sudo chmod a+x -R /opt/retropie/configs/all/*.sh && sudo chmod a+x -R /home/pi/RetroPie/retropiemenu/*.sh"
     Launch back into ES with the command "emulationstation"
     **If using a VGA666-based hat** (anything other than RetroTINK) run 'Enable VGA666' from the Retropie carousel menu
     Reboot (VGA script will reboot automatically)
