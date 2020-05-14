@@ -1,0 +1,296 @@
+***CRTPi Project Presents:***
+
+#CRTPi-RCA v3.0F
+*A CRTPi image for running 240p via 3.5mm Composite*
+
+**Other Releases:**
+
+* [CRTPi-Project GitHub](https://github.com/crtpi/CRTPi-Project)
+* [CRTPi-RGB v3.0: Main Fork (888&666)](https://www.reddit.com/user/ErantyInt/comments/giih2z/crtpirgb_v30_buster_busts_loose_redump51220/)
+* [CRTPi-RCA v2.0F: PiZero Fork (Composite)](https://www.reddit.com/user/ErantyInt/comments/fykofh/crtpirca_v20fzero_bringing_crt_gaming_to_tiny/)
+* [CRTPi-VGA v2.5V: VGA Fork](https://www.reddit.com/user/ErantyInt/comments/ge78e1/crtpivga_v25v_for_that_vga_monitor_in_your_attic/)
+
+____
+
+**Changelog: v3.0F for RCA 5/11/2020**
+
+* Reimaged with fresh Retropie 4.6 install image (4/28/20)
+* Updated base config to Retropie 4.6 (build 72132587 commit 05/07/20 Buster 10)
+* Updated Retroarch to v1.8.5
+* Return of the 4GB Image! (3872256KB, 886769KB-NTSC/868059KB-PAL Compressed)
+* Added PAL Image (576i/288p@50hz) alongside NTSC Image (480i/240p@60hz)
+* Updated common lr- emulator configs for the correct PAL refresh rate per system. (SNES/NES/SGB2/GBA = 50.007000, ATARI2600/COLECO/MSX/SMS/MD/GG = 49.701459, Default = 50.000000)
+* Removed Arcade Configs (now a separate pack) to bring image down to 4GB
+* Minor fixes and clarifications to runcommand scripting
+* Created all-new runcommand launching images based on Ruckage's SNES-Mini icons and blurred_shots backgrounds
+
+**Changelog: v2.0F for RCA 4/1/2020**
+
+* Updated base config to Retropie 4.5.18 (build d737e15a commit 03/24/20)
+* Updated Retroarch to v1.8.4
+* Runahead now stable enough for *most* emulators on a stock-clocked Pi3B
+* Disabled Runahead for lr-snes9x (current fork)
+* Disabled Threaded Video in Retroarch
+* Enabled 4:3 aspect with horizontal overscan crop enabled for lr-FCEUUM and removed bilinear filtering
+* Removed all enhanced resolution and interlacing modes from lr-PCSXReARMed and removed bilinear filtering
+* Fixed issue where GB/GBC overlay was stuck at 640x480 instead of 720x480 and corrected resolution to 2X integer scale (320x288)
+* Included new metadata images for the 240p Test Suite roms from /u/chipsnblip
+* Added 160p Test Suite for mGBA along side the original mGBA Test Suite
+* Set default theme to SNES-Mini
+
+**Changelog: v1.1FX 12/20/2019**
+
+* Applied Sakitoshi's TVout-Tweaks-Smart shader across all lr- emulators to fix artifacting issues 
+* Enabled runahead (1 frame, 2nd instance) for all available 8-bit and 16-bit retroarch cores. 
+* Added (optional) Pi3B+ overclock values.
+* Extended arcade rom configs for /roms/arcade/ to include FB Neo, FB Alpha 2012, Mame 2003, Mame 2003-Plus, Mame 2010, and Mame 2000.
+* Extended arcade rom configs for /roms/fba/ to include FB Neo and FB Alpha 2012.
+* Extended arcade rom configs for /roms/mame-libretro/ to include Mame 2003, Mame 2003-Plus, Mame 2010, and Mame 2000.
+* Installed additional arcade emulator lr-mame2003-plus. 
+* Changed emulators.cfg to switch all roms set for lr-mame2003 to lr-mame2003-plus. 
+* Fixed issue where GBC configs were pointing to GB directory.
+* Fixed issue with notification message location in GBA, GB, and GBC emulators.
+* Changed lr-fceumm options to disable horizontal overscan, go back to 8:7 PAR aspect ratio, and changed palette to composite-direct-fbx. (these settings closest matched a real Famicom AV over composite) 
+* Updated common lr- emulator configs for the correct refresh rate per system. (SNES/NES/SGB2 = 60.098801, GBA Player = 60.002220, ATARI2600/COLECO/MSX/SMS/MD/GG = 59.922741, Default = 60.000000)
+* Installed additional lightweight 4:3 ES themes: 240p-Honey, Art-Book 4-3, Art-Book Pocket, Retrowave 4-3, Super Retroboy, Pixel, and Pixel-Metadata.
+
+**Changelog: v1.0F Hotfix 10/31/2019**
+
+* Fixed issue with hotkeys, removed keyboard F-key hotkeys from build entirely.  Hotkeys are now default per the retroarch distro.
+* Fixed issue where the mastersystem emulator got set to lx-genesis-gx-plus instead of lr-picodrive.
+* Fixed issue where lr-mame2003 was displaying nag screens by default.
+* Redumped and uploaded the image file, URL has not changed.
+* New MD5: b6a5f65c97afe09f13c7373a27332df7
+* Created hotfix pack to unzip into already-flashed images from the 10/29/19 build. [See this post](https://old.reddit.com/r/crtgaming/comments/dovjd7/crtpirca_v10f_a_fork_of_the_crtpiproject/f5yck5e/).
+
+**Changelog: v1.0F 10/29/2019**
+
+* CRTPi-RCA: Version v1.0 Final Public Release.
+* Hybrid Resolution -- Boots in 480i and plays games in 240p!
+* Implimented *heavily* modified version of the [Sakitoshi CRT-TVout scripts](https://github.com/Sakitoshi/retropie-crt-tvout), removing all shaders and sticking to a more standard integer scale image.
+* Kodi 18.2 set up for 480i with NO SLOWDOWN!
+* Set major hotkeys for lr- emulators on keyboard to F-keys.
+* Custom config files to allow certain Arcade and PSX games to run in 480i/240p
+* Completely overhauled all libretro emulators for 240p output where applicable
+* Configured Atari Lynx, Sega Gamegear, NeoGeo Pocket/Color, and Wonderswan Pocket/Color with overlays and optimized (not pixel-perfect) wide resolution
+* Overhauled GB/GBC/GBA to have correct integer scale 2X output with SGB2 and GBP overlays
+
+**Changelog: v0.4 10/22/2019**
+
+* Second release of CRTPi-RCA, fourth releae of the CRTPi-Project. 
+* CRTPi-RCA: Version v0.4 Final Beta Release. (Final Public release will be released once I have a working 480i/240p hybrid configuration using a *heavily* modified Sakitoshi script.)
+* Switched to 8GB disk image to accommodate disk-based system test suites and more ports
+* Updated all installed packages to 4.5.1 (231b13ab) - 10/20/19
+* Switched N64 default emulator to mupen64plus-auto @ 320x240 for speed and compatibility (lr-mupen64plus still set up)
+* Graphics Tweaks for lr-PCSX-ReARMed (disabled vibration + lowered frame clock to 55 + enabled interlacing modes, enhanced resolution, speedhack, and bilinear filtering)
+* Added optional overclock values in boot config (disabled by default)
+* Added another theme optimized for low resolution: CRT-Bubblegum
+* Preloaded Kodi 18.2 with Convergence theme (Large Font) @ 480i **[ISSUE: Reboot Required after Kodi to play any games -- massive slowdown after exit]**
+* Preloaded and set up Quake shareware port (lr-tyrquake)
+
+**Changelog: v0.3 10/2/2019**
+
+* Initial release of CRTPi-RCA, third release of the CRTPi-Project.
+* New Config Fork: CRTPi-RCA, an image for use with the 3.5mm composite out on the Pi board utilizing the Raspberry Pi's SDTV16 mode for 640x480 Progressive Scan (240 Lines).
+
+___
+
+**What Does That Look Like?**
+
+[Here are some examples of games being played in beautiful 240p on CRT sets using the RCA Image!](https://photos.google.com/share/AF1QipO8q3LzMQIlexAD0kgEGIArp5Ax8Y9SMxCqoiaouZKDKbcJO3AN-YS7YuaykX1J7A?key=LXJMbWZheG8yamxNOGwxLVRXOWlwRzRia2R6a2FB).
+
+___
+
+**What is Different?**
+
+* Retropie 4.6 (build 72132587 commit 05/07/20 Buster 10)
+* Retroarch 1.8.5
+* 4GB (3872256 KB Uncompressed Image) (Compressed via WinRAR to 886769NTSC/868059PAL KB)
+* SSH, Samba Share, and USB Rom Service enabled by default
+* Heavily modified [Sakitoshi CRT-TVout script](https://github.com/Sakitoshi/retropie-crt-tvout) for switching between 480i and 240p
+* Optional overclock values in /boot/config.txt for Pi2 & Pi3B (disabled by default)
+* NTSC @ 60hz 720/640x480 480i Resolution for Emulationstation & Kodi
+* PAL @ 50hz 720/640x576 576i Resolution for Emulationstation & Kodi
+* NTSC @ 60hz 640x480 Progressive (240 lines) for Retroarch
+* PAL @ 50hz 640x576 Progressive (288 lines) for Retroarch
+* Per-system custom refresh rates for Retroarch
+* Single-frame Run Ahead enabled for many 8-bit & 16-bit consoles and handhelds for Retroarch
+* Optional 480i mode for PSX and Arcade games
+* Preloaded with free 240p test suites for multiple consoles (PAL SNES & Mega-CD)
+* Preloaded with additional stable (opt) Retroarch emulators
+* Preloaded with DOSBox and ScummVM
+* Preloaded with Kodi 18.2 w/ Convergence Theme @ 480i
+* Preloaded with various 4:3 splashscreens from the RPiF download
+* Preloaded with 4:3 Ruckage's runcommand launching screens for supported systems
+* Custom 4:3 Arcade DOJ "Winners DO Use Drugs" splash screen.
+* Preloaded with MUNT Roland MT-32 MIDI emulation for DOSBox/ScummVM
+* Retroarch FCEUmm (NES) Emulator preconfigured for 4:3 horiz/vert overscan crop enabled w/ composite-direct-fbx pallete
+* Retroarch Picodrive (SMS/32X) Emulator preconfigured for 4:3 with 2.5X Sega Mastersystem & 1X Sega 32X resolution 
+* Retroarch Gambatte (GB/GBC) emulator preset to Super Game Boy (Special 1 Pallete) mode with 2x integer scale SGB Overlay
+* Retroarch mGBA (GBA) emulator preset to Game Boy Player mode with 2x integer scale GBP Overlay
+* Other Retroarch handheld emulators preset for optimized wide display with overlay
+* Emulationstation preloaded with KALEL1981's Super-Retroboy theme (default)
+* Emulationstation preloaded with Ruckage's RetroPie menu icons
+* Emulationstation preloaded with Ruckage's snes-mini and nes-mini themes configured for 4:3
+* Emulationstation preloaded with PietDAmore's 240p Honey and Bubblegum themes
+* Custom ScummVM system artwork for snes-mini theme
+* Emulationstation systems ordered chronologically instead of alphabetically
+* Emulationstation preconfigured with best settings for analog A/V including best settings for video preview screensavers
+
+___
+
+**What is Run-Ahead?**
+
+> [The Run Ahead feature calculates the frames as fast as possible in the background to "rollback" the action as close as possible to the input command requested.](https://docs.libretro.com/guides/runahead/)
+
+I've enabled run-ahead on most of the 8 & 16-bit consoles and handhelds. A single frame (and using the second instance) is saved here, which dramatically improves input lag without affecting performance on a Pi3B+. More frames would require more hardware power, and may be achievable via overclocking.
+
+    lr-snes9x2010 consistent 60.0-60.2 FPS @ 60.098801hz 
+
+    lr-fceumm consistent 60.0-60.2 FPS @ 60.098801hz 
+
+    lr-beetle-pce-fast consistent 60.1-60.2 @ 60.000000hz
+
+    lr-genesis-gx-plus consistent 59.9-60.2 FPS @ 59.922741hz (both genesis and sega cd)
+
+    lr-picodrive consistent 59.9-60.2 FPS @ 59.922741hz (master system, game gear, and 32X)
+
+    lr-gambatte consistent 60.0-60.2 FPS @ 60.098801hz (SGB2 framerate)
+
+    lr-mgba consistent 59.8-60.4 FPS @ 60.002220hz (Gamecube framerate)
+
+
+**Runahead Tested ~60FPS Stable:**
+
+* Game Gear
+* Game Boy
+* Game Boy Color
+* Game Boy Advance
+* Master System
+* Megadrive
+* NES
+* PC Engine
+* PCE-CD
+* Sega 32X
+* Sega CD
+* SNES
+
+**Runahead Tested < 50FPS Unstable:**
+
+* FB Neo
+* FB Alpha
+* Mame
+* N64
+* PlayStation
+* PSP
+
+**Runahead Untested:**
+
+* Atari 800
+* Atari 2600
+* Atari 5200
+* Atari 7800
+* Atari Lynx
+* Coleco
+* Intellivision
+* MSX
+
+___
+
+**What Does This NOT Have?**
+
+This doesn't have any ROMs (other than freeware test suites), BIOS files, music, screenshots, metadata, or videos concerning copywritten games. Other than the configurations and overlays, it has nothing that can't be downloaded through the repository or freeware.
+
+___
+
+**Where Can I Get It?**
+
+You can download a premade image from Drive:
+
+> NOTE: Please expand your file system via Raspi-Config after your first boot, and reboot!
+
+***[CRTPi-RCA NTSC v3.0F: For Raspberry Pi3B Composite-Out @ 60hz](https://drive.google.com/file/d/1wznmRm0i4-wl1bHhMyQ2S-fkWc7b8FpL/view?usp=sharing)***
+
+    MD5: 438d69a38b6085d2c5be30fbd43e2b43
+
+***[CRTPi-RCA PAL v3.0F: For Raspberry Pi3B Composite-Out @ 50hz](https://drive.google.com/file/d/1gt_fBKVye5men3gOzK9KGHDOOKGgulRU/view?usp=sharing)***
+	
+	MD5: 5f76241b4ba75e95b597642cea8eb242
+	
+___
+
+**How do I install the Arcade Configuration Pack?**
+
+These are the resolution-correct preset arcade configs for MAME/FBA including vertical games. There is roughly 38K files in there, spread out across several systems (arcade, fba, mame-libretro, and neogeo). Having these pre-installed would not allow either image to fit on the SD card used, and may not be needed for everyone. It's a fairly simple process that won't take more than a few minutes of your time.
+
+* Drop to shell or connect via SSH, and navigate to root (cd /)
+* Download the CRTPi-RCA_ArcadePack.zip with the command:
+
+    sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RCA_ArcadePack.zip
+	
+* Unzip and overwrite files with the command:
+    
+	sudo unzip -o -q CRTPi-RCA_ArcadePack.zip
+	
+* Remove the zip with the command 
+
+    sudo rm CRTPi-RCA_ArcadePack.zip
+	
+* Restore read/write access to the files you have overwritten with the command:
+
+    sudo chmod a+rw -R /opt/retropie/configs/
+
+**How can I take full advantage of the 480i/240p Switching?**
+
+To force 480i for a system or game, you can create a '480i.txt' file inside the configuration folder of the system with a list of the file names (case insensitive, extension optional but recommended) you want to force. 
+
+If you wish to force 480i for a whole system, you can write "all" inside the '480i.txt' file. 
+
+Alternatively you can create a "240p.txt" file to force 480i to all games *except for* the ones inside the list.
+
+You can read more about the script functionality [here](https://github.com/Sakitoshi/retropie-crt-tvout).
+
+*Example:*
+
+    /opt/retropie/configs/psx/480i.txt containing "Bloody Roar 2.PBP" to force 480i for the file "Bloody Roar 2.PBP"
+    /opt/retropie/configs/psx/480i.txt containing "all" to force 480i for all the PlayStation games.
+    /opt/retropie/configs/ports/kodi/480i.txt containing "all" to force 480i on Kodi.
+
+___
+
+**I have X Issue! Help?**
+
+***I only have like 500mb of free space on my XXgb SD card!***
+
+You need to expand your file system via Raspi-Config. Follow [these](https://crispconcept.com/pages/expand-sd-card) steps. 
+
+***I want to switch back to lr-mupen64plus!***
+
+* When launching an n64 game, mash buttons on the controller until the runcommand window comes up.  
+* Select on "1  Set default emulator for n64" and choose "lr-mupen64plus"
+* Then "Q  Exit (without launching)"
+* Launch the game again -- it will launch in the chosen emulator at the proper resolution
+
+***What A/V cable should I use for 3.5mm Composite?***
+
+I recommend the Zune A/V cable or XBOX 360E cable, you can find them on eBay and Amazon.
+
+***Samba Share won't work after I set up Wi-Fi!***
+
+Samba share service starts on boot, pending that a network is available. Configure your Wi-Fi then reboot first, and if that doesn't fix it then go into Retropie Setup > Configuration/Tools > Samba > Install Samba.  Once it's complete, reboot and it should be golden.
+
+***USB-Romservice and/or Retropie-Mount don't work!***
+
+Follow [this guide](https://github.com/RetroPie/RetroPie-Setup/wiki/Running-ROMs-from-a-USB-drive), but follow these steps before plugging in your thumb drive:
+
+* Go to Retropie-Setup
+* Update retropie install script
+* Go to Manage Packages -> Optional Packages
+* Scroll all the way down to usbromservice
+* Uninstall usbromservice
+* Install it again from Binary
+* Once finished, choose Configuration, then Enable USB Romservice
+* Reboot, and wait for it to fully boot in to ES
+* Plug in USB stick (has to be FAT32) and WAIT A LONG TIME (if your stick has a light, wait for it to stop flashing)
+
+___

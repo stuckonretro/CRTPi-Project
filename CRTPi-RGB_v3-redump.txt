@@ -1,0 +1,141 @@
+***CRTPi Project Presents:
+
+#CRTPi-RGB v3.0 [REDUMP-5/12/20]
+*A CRTPi image for running 240p via GPIO RGB DAC Hats - [Original Thread](https://www.reddit.com/user/ErantyInt/comments/gfsaki/crtpirgb_v30_buster_busts_loose/)*
+
+**Other Releases:**
+
+* [CRTPi-Project GitHub](https://github.com/crtpi/CRTPi-Project)
+* [CRTPi-RCA v2.0F: Main Fork (Composite)](https://www.reddit.com/user/ErantyInt/comments/fsmsgk/crtpirca_v20f_just_like_you_remember_but_better/)
+* [CRTPi-RCA v2.0F-Zero: PiZero Fork (Composite)](https://www.reddit.com/user/ErantyInt/comments/fykofh/crtpirca_v20fzero_bringing_crt_gaming_to_tiny/)
+* [CRTPi-VGA v2.5V: VGA Fork](https://www.reddit.com/user/ErantyInt/comments/ge78e1/crtpivga_v25v_for_that_vga_monitor_in_your_attic/)
+
+____
+
+As some of you may have seen, amongst other errors -- there was an issue with this image's runcommand-onstart scripting that was forcing 2048x240p to all libretro emulators. The fix in question will be at the bottom of this post. I've redumped the CRTPi-RGB v.30 image. The link hasn't changed, but the checksum has. 
+
+____
+
+**Changelog: v3.0 for 888 & 666 05/12/2020 - Emergency Fixes**
+
+* Fixed runcommand-onstart.sh and runcommand-onstart.666 files so resolution no longer forces into 2048 on every system.
+* Restored functionality to force 1920 via 320.txt and 2048 via 256.txt in '/opt/retropie/configs/$system/'
+* Restored functionality to the VGA666 and Retrotink enable scripts.
+* Restored PCE-CD system, as Retropie doesn't generate a default emulators.cfg and retroarch.cfg.
+* Readded CaveStory game files to /home/pi/RetroPie/roms/ports/CaveStory/ so it plays out of the box. 
+* Redumped and uploaded image, new MD5: d9d28f5ae8fe5cc829348be4b5a103fc
+* New Retrotink/VGA666 icons in Retropie Menu
+* Various tweaks and tricks
+
+____
+
+**Where Can I Get It?**
+
+You can download a premade image from Google Drive:
+
+> NOTE: Please expand your file system via Raspi-Config after your first boot, and reboot!
+
+***[CRTPi-RGB v3.0: For Pi3B/3B+ with Retrotink, Pi2SCART, RGB-Pi, or VGA666](https://drive.google.com/file/d/1DAg6e4Zg1HPP1ptk9N63YuuTTWbYGKbn/view?usp=sharing)***
+
+    MD5: d9d28f5ae8fe5cc829348be4b5a103fc
+
+___
+
+**Install Instructions:**
+
+*For Retrotink Ultimate:*
+
+* Download image and unRAR it.
+* Flash to your SD card with Win32DiskImager or Etcher.
+* Boot as normal, run Raspi-Config, and choose Expand Filesystem from Advanced Options.
+* Reboot from Raspi-Config, and enjoy your Pi!
+
+*For Pi2SCART/RGB-Pi/VGA666:*
+
+* Download image and unRAR it.
+* Flash to your SD card with Win32DiskImager or Etcher.
+* **BEFORE BOOTING** Edit 'config.txt' on your SD card's BOOT partition, uncomment the section relevant to your device, and comment all other devices.
+
+    \## Pi2SCART & VGA666 only!!
+
+    \#dtoverlay=vga666
+
+    \#hdmi_timings=320 1 16 30 34 240 1 2 3 22 0 0 0 60 0 6400000 1 #Pi2SCART/VGA666 320x240p@60hz
+
+ __
+   
+    \## RGB-Pi only!!
+
+    \#dtoverlay=pwm-2chan,pin=18,func=2,pin2=19,func2=2
+
+    \#dtoverlay=rgb-pi
+
+    \#dpi_output_format=6
+
+    \#hdmi_timings=320 1 16 30 34 240 1 2 3 22 0 0 0 60 0 6400000 1 #RGB-Pi 320x240p@60hz
+    
+ __
+
+    \## RetroTINK Ultimate only!!
+
+    \#dtoverlay=dpi24
+
+    \#dpi_output_format=519
+
+    \#hdmi_timings=320 1 23 30 34 240 1 4 3 15 1 0 0 60 0 6400000 1 #RetroTINK 320x240p@60hz
+
+__
+
+* Boot as normal, run Raspi-Config, and choose Expand Filesystem from Advanced Options, then reboot.
+* In Emulationstation, run "Enable VGA666" from the Retropie menu. 
+* Your system will automatically reboot. Enjoy your Pi! 
+
+*To Revert VGA666 to Retrotink Settings*
+
+* In Emulationstation, run "Enable Retrotink" from the Retropie menu.
+* Your system will automatically reboot with the new settings.
+
+___
+
+**What's the fix if I already installed it?!**
+
+*IF YOU INSTALLED THIS IMAGE OR DOWNLOADED THE CRTPi-RGB.zip or CRTPi-VGA.zip PACKAGE(S) FROM THE GITHUB BEFORE 15:30PST ON 5/11/20, PLEASE READ!!!*
+
+If you have already flashed the CRTPi-RGB image from my Google drive, or installed the configs from my Github, there is a *major* issue with the runcommand-onstart.sh script. Long story short, the script I modified that looks for 240.txt and 320.txt breaks the entire chain and forces 2048x240p for ALL libretro emulators. Needless to say, this is a problem, and super embarassing for me. :( Please follow the instructions below.
+
+____
+
+*CRTPi-RGB using a RetroTINK Ultimate* 
+
+Connect to the internet, drop to shell (or connect to SSH) and input the following commands:
+
+    cd /opt/retropie/configs/all/
+    sudo rm runcommand-onstart.sh && sudo rm runcommand-onstart.666
+    sudo wget https://raw.githubusercontent.com/crtpi/CRTPi-Project/master/RGB-to_opt/retropie/configs/all/runcommand-onstart.sh && sudo wget https://raw.githubusercontent.com/crtpi/CRTPi-Project/master/RGB-to_opt/retropie/configs/all/runcommand-onstart.666
+    sudo chmod a+rwx -R /opt/retropie/configs/all/*.sh && sudo chmod a+rwx -R /opt/retropie/configs/all/*.666
+
+____
+
+*CRTPi-RGB using a Pi2SCART/RGB-Pi/VGA666/etc*
+
+Connect to the internet and then run "Enable RetroTINK" from the Retropie carousel menu (the system will reboot).  Once it's running again, drop to shell (or connect to SSH) and input the following commands:
+
+    cd /opt/retropie/configs/all/
+    sudo rm runcommand-onstart.sh && sudo rm runcommand-onstart.666
+    sudo wget https://raw.githubusercontent.com/crtpi/CRTPi-Project/master/RGB-to_opt/retropie/configs/all/runcommand-onstart.sh && sudo wget https://raw.githubusercontent.com/crtpi/CRTPi-Project/master/RGB-to_opt/retropie/configs/all/runcommand-onstart.666
+    sudo chmod a+rwx -R /opt/retropie/configs/all/*.sh && sudo chmod a+rwx -R /opt/retropie/configs/all/*.666
+
+Afterwards, Run "Enable VGA666" from the Retropie carousel menu (the system will reboot again).
+
+____
+
+*CRTPi-VGA using a VGA666*
+
+Connect to the internet, drop to shell (or connect to SSH) and input the following commands:
+
+    cd /opt/retropie/configs/all/
+    sudo rm runcommand-onstart.sh
+    sudo wget https://raw.githubusercontent.com/crtpi/CRTPi-Project/master/VGA-to_opt/retropie/configs/all/runcommand-onstart.sh
+    sudo chmod a+rwx -R /opt/retropie/configs/all/*.sh
+
+____
