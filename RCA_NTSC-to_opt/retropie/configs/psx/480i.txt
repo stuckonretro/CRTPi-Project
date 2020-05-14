@@ -1,22 +1,22 @@
-Atari Anniversary Edition Redux.PBP
-Bloody Roar II.PBP
-All Star Boxing.PBP
-Bubsy 3D.PBP
-Clock Tower II - The Struggle Within.PBP
-Chrono Cross.PBP
-Dead or Alive.PBP
-Devil Dice.PBP
-Dynasty Warriors.PBP
-Ehrgeiz.PBP
-Formula 1.PBP
-Gekioh - Shooting King.PBP
-iS - Internal Section.PBP
-Kensei - The Sacred Fist.PBP
-Kickboxing Knockout.PBP
-Ridge Racer Turbo.PBP
-Tekken 3.PBP
-Tobal No.1.PBP
-Tobal 2.PBP
-Torneko - The Last Hope.PBP
-Rapid Racer.PBP
-Xevious 3D-G.PBP
+Atari Anniversary Edition Redux
+Bloody Roar II
+All Star Boxing
+Bubsy 3D
+Clock Tower II - The Struggle Within
+Chrono Cross
+Dead or Alive
+Devil Dice
+Dynasty Warriors
+Ehrgeiz
+Formula 1
+Gekioh - Shooting King
+iS - Internal Section
+Kensei - The Sacred Fist
+Kickboxing Knockout
+Ridge Racer Turbo
+Tekken 3
+Tobal No.1
+Tobal 2
+Torneko - The Last Hope
+Rapid Racer
+Xevious 3D-G
