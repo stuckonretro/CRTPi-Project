@@ -6,27 +6,6 @@
 #############################################################################################
 #############################################################################################
 
-[pi4]
-## Enable DRM VC4 V3D driver on top of the dispmanx display stack
-dtoverlay=vc4-fkms-v3d
-max_framebuffers=2
-
-## Pi4-Only Overclock Values
-#over_voltage=6
-#arm_freq=2000
-#gpu_freq=700
-
-## Enable TV-Out mode from 3.5mm Composite
-enable_tvout=1
-
-## Set Boot Delay
-#boot_delay=1
-
-[all]
-## Enable DRM VC4 V3D driver on top of the dispmanx display stack
-#dtoverlay=vc4-fkms-v3d
-#max_framebuffers=2
-
 ## Misc audio settings
 disable_audio_dither=1
 audio_pwm_mode=2
