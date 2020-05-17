@@ -56,7 +56,14 @@ _____
     **If using a VGA666-based hat** (anything other than RetroTINK) run 'Enable VGA666' from the Retropie carousel menu
     Reboot (VGA script will reboot automatically)
     Launch Retropie-Setup and choose "resetromdirs" from the Configurations menu
-	
+
+*OPTIONAL: RGB JAMMA Config Pack*
+
+    Download the CRTPi-RGB_JAMMA-Pack.zip into your root folder (cd /) with the command "sudo wget https://github.com/crtpi/CRTPi-Project/raw/master/CRTPi-RGB_JAMMA-Pack.zip"
+    Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-RGB_JAMMA-Pack.zip"
+    Remove the zip with the command "sudo rm CRTPi-RGB_JAMMA-Pack.zip"
+    Restore read/write access to the files you have overwritten with the command "sudo chmod a+rw /etc/pikeyd165.conf && sudo chmod a+rwx /opt/retropie/configs/all/autostart.sh && sudo chmod a+rw /usr/local/bin/pikeyd165 && sudo chmod a+rw /usr/local/bin/mme4crt"
+
 *RCA: For Composite-Out from the Pi's 3.5mm Port to a 15khz Display*
 
     Install Retropie and configure your desired content
