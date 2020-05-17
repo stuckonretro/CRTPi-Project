@@ -63,6 +63,7 @@ _____
     Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-RGB_JAMMA-Pack.zip"
     Remove the zip with the command "sudo rm CRTPi-RGB_JAMMA-Pack.zip"
     Restore read/write access to the files you have overwritten with the command "sudo chmod a+rw /etc/pikeyd165.conf && sudo chmod a+rwx /opt/retropie/configs/all/autostart.sh && sudo chmod a+rw /usr/local/bin/pikeyd165 && sudo chmod a+rw /usr/local/bin/mme4crt"
+    Reboot the system with the command "sudo reboot now"
 
 *RCA: For Composite-Out from the Pi's 3.5mm Port to a 15khz Display*
 
