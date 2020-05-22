@@ -21,9 +21,8 @@ framebuffer_height=240
 hdmi_force_hotplug=1
 
 ## Uncomment to force a specific HDMI mode (this will force VGA)
-hdmi_group=2
-hdmi_mode=87
-hdmi_timings=320 1 16 30 34 240 1 2 3 22 0 0 0 60 0 6400000 1 #320x240p@60hz
+hdmi_group=2 #DMT
+hdmi_mode=4 #640x480@60hz
 
 ## Uncomment to force a HDMI mode rather than DVI. This can make audio work in DMT (computer monitor) modes
 hdmi_drive=2
