@@ -10,6 +10,16 @@
 #disable_audio_dither=1
 #audio_pwm_mode=2
 
+## Disable Monitor EDID
+hdmi_ignore_edid=0xa5000080
+hdmi_ignore_cec_init=1
+
+## Uncomment for TATE mode (270 Degree)
+#display_lcd_rotate=3
+
+## Uncomment this if your display has a black border of unused pixels visible and your display can output without overscan
+#disable_overscan=1
+
 #############################################################################################
 ################# CHOOSE ONLY ONE DISPLAY ADAPTER BLOCK TO UNCOMMENT AT ONE #################
 ################# TIME! IGNORE THE EXPERIMENTAL BOOT TIMING UNLESS YOU KNOW #################
@@ -20,9 +30,12 @@
 #hdmi_group=2
 #hdmi_mode=4
 
-## HDMI to Analog - CEA 480p@60hz
+## HDMI to Analog - CEA 720x480p@60hz
 hdmi_group=1
 hdmi_mode=2
+
+#############################################################################################
+#############################################################################################
 
 ## VGA666 - DPI Settings
 #dtoverlay=vga666
@@ -42,13 +55,11 @@ hdmi_mode=2
 #dpi_group=2
 #dpi_mode=7
 
-## Disable Monitor EDID
-hdmi_ignore_edid=0xa5000080
-hdmi_ignore_cec_init=1
+## VGA666 - CEA 720x480p@60hz
+#dpi_group=1
+#dpi_group=2
 
-# Uncomment for TATE mode (270 Degree)
-#display_lcd_rotate=3
-
+#############################################################################################
 #############################################################################################
 #############################################################################################
 
@@ -62,9 +73,6 @@ boot_delay=1
 
 ## Uncomment if you get no picture on HDMI for a default "safe" mode
 #hdmi_safe=1
-
-## Uncomment this if your display has a black border of unused pixels visible and your display can output without overscan
-#disable_overscan=1
 
 ## Uncomment the following to adjust overscan. Use positive numbers if console goes off screen, and negative if there is too much border
 #overscan_left=16
