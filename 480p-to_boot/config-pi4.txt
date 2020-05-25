@@ -11,6 +11,11 @@
 dtoverlay=vc4-fkms-v3d
 max_framebuffers=2
 
+## Pi4-Only Overclock Values
+#over_voltage=6
+#arm_freq=2000
+#gpu_freq=700
+
 ## Analog Audio Settings!!
 #disable_audio_dither=1
 #audio_pwm_mode=2
