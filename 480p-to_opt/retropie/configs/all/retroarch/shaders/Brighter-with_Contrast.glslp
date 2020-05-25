@@ -1,0 +1,3 @@
+shaders = 2
+shader0 = "shaders/gamma.glsl"
+shader1 = "shaders/image-adjustment.glsl"
