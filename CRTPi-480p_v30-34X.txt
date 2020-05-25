@@ -23,6 +23,7 @@
 * Added both 720x480p and 640x480p GBA and GB/GBC overlays
 * Created all-new runcommand launching images based on Ruckage's SNES-Mini icons and blurred_shots backgrounds
 * Removed overlays and configurations for all handhelds besides GBA and GB/GBC (I am not remaking them for the Nth time -- I don't even play them. Find the SusGoArt pack or something!)
+* Lost the will to keep up the good fight and plugged my Pi into an HDTV. God help us all.
 
 **Required Hardware:**
 
@@ -32,6 +33,8 @@
 * Appropriate video cables and interfaces
 * 5v 2.5A power supply
 * 4GB+ SD Card
+
+___
 
 **What is this?**
 
