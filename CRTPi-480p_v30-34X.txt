@@ -1,0 +1,184 @@
+***CRTPi Project Presents:***
+
+#CRTPi-480p v3.0X && v3.4X
+*A CRTPi image for running 480p via HDMI or VGA!*
+
+**Other Releases:**
+
+* [CRTPi-Project GitHub](https://github.com/crtpi/CRTPi-Project)
+* [CRTPi-RGB v3.0: Main Fork (888&666)](https://www.reddit.com/user/ErantyInt/comments/giih2z/crtpirgb_v30_buster_busts_loose_redump51220/)
+* [CRTPi-RCA v3.0F: Main Fork (Composite)](https://www.reddit.com/user/ErantyInt/comments/gikkxs/crtpirca_ntscpal_v30f_america_europe_unite/)
+* [CRTPi-RCA v3.4FX: Pi4 Fork (Composite)](https://reddit.com/user/ErantyInt/comments/glp71p/crtpi4rca_v34fx_composite_tvout_for_your_pi4/)
+* [CRTPi-RCA v2.0F-Zero: PiZero Fork (Composite)](https://www.reddit.com/user/ErantyInt/comments/fykofh/crtpirca_v20fzero_bringing_crt_gaming_to_tiny/)
+* [CRTPi-VGA v3.0V: VGA Fork](https://reddit.com/user/ErantyInt/comments/giob24/crtpivga_v30v_find_that_vga_monitor_yet/)
+
+**Changelog: v3.0X && v3.4X for HDMI&VGA666 05/25/2020**
+
+* Reimaged with fresh Retropie 4.6 install image (4/28/20)
+* Updated base config to Retropie 4.6 (build 7c5e31bb commit 05/07/20 Buster 10)
+* Updated Retroarch to v1.8.5
+* Boots in various modes of 720x480p or 640x480p based on boot config
+* Removed all runcommand scripting and most per core setting
+* Fixed most cores to 4:3 without integer scale -- assisted by Snap-Basic and Simple-Bilinear-Scanline filters
+* Added both 720x480p and 640x480p GBA and GB/GBC overlays
+* Created all-new runcommand launching images based on Ruckage's SNES-Mini icons and blurred_shots backgrounds
+* Removed overlays and configurations for all handhelds besides GBA and GB/GBC (I am not remaking them for the Nth time -- I don't even play them. Find the SusGoArt pack or something!)
+
+**Required Hardware:**
+
+* Raspberry Pi3B/B+ **or** Pi4B
+* HDMI to Analog adapter **or** VGA666
+* 31khz capable display
+* Appropriate video cables and interfaces
+* 5v 2.5A power supply
+* 4GB+ SD Card
+
+**What is this?**
+
+I finally did something for people who don't want to use expensive video hats and SDTV's! This image boots in your choise of CEA 480p or various 640x480p VGA modes. Using Snap-Shader and Simple-Bilinear-Scanlines, I've given a way to upscale 240p content to 480p, while still looking and performing console-fresh! The perfect image for EDTV, HiScan sets, mulit-scan monitors, GSB arcade boards -- this even works on HDTV's that don't upscale 480p content!! 
+
+***That said, I hate it and it should burn in hell... Enjoy!***
+
+___
+
+**What Does That Look Like?**
+
+[Here's a bunch of pics I took, some better than others!](https://photos.google.com/share/AF1QipP4Z6IIXXET_YCU-ZEYAvzzln7zzRe5ETdCzfM8HOOelZKq01QoABlysxcNydTIGg?key=OXVZU2RZMW02ZEtNX08td216VlZhTU9RVHlYNkZn)
+
+___
+
+**What is Different?**
+
+See the current changelog and the v3.0 thread for a [complete list](https://www.reddit.com/user/ErantyInt/comments/giih2z/crtpirgb_v30_buster_busts_loose_redump51220/).
+___
+
+**What is Run-Ahead?**
+
+> [The Run Ahead feature calculates the frames as fast as possible in the background to "rollback" the action as close as possible to the input command requested.](https://docs.libretro.com/guides/runahead/)
+
+I've enabled run-ahead on most of the 8 & 16-bit consoles and handhelds. A single frame (and using the second instance) is saved here, which dramatically improves input lag without affecting performance on a Pi3B+. More frames would require more hardware power, and may be achievable via overclocking.
+
+    lr-snes9x2010 consistent 60.0-60.2 FPS @ 60.098801hz 
+
+    lr-fceumm consistent 60.0-60.2 FPS @ 60.098801hz 
+
+    lr-beetle-pce-fast consistent 60.1-60.2 @ 60.000000hz
+
+    lr-genesis-gx-plus consistent 59.9-60.2 FPS @ 59.922741hz (both genesis and sega cd)
+
+    lr-picodrive consistent 59.9-60.2 FPS @ 59.922741hz (master system, game gear, and 32X)
+
+    lr-gambatte consistent 60.0-60.2 FPS @ 60.098801hz (SGB2 framerate)
+
+    lr-mgba consistent 59.8-60.4 FPS @ 60.002220hz (Gamecube framerate)
+
+
+To disable runahead for a game (or emulator):
+
+    Quick Menu > Latency > Run-Ahead to Reduce Latency > OFF
+
+___
+
+**What is Snap-Shader?**
+
+It's a Retroarch GSL shader that ensures games on CRT will look as good as on original hardware. It Makes games crisp vertically, and not shimmer horizontally. It correctly aligns the games for you regardless of console. Virtually eliminates the need for separate configurations per core (console).
+
+https://github.com/ektgit/snap-shader-240p
+
+Snap Shader (especially the snap-basic) is super useful on consoles where you may have a mix of horizontal resolutions within the core that you don't necessarily want to set individual game configs for, which for this build, is basically everything but Megadrive, GBA, GBC, Doom, and Quake.
+
+___
+
+**What Does This NOT Have?**
+
+This doesn't have any ROMs (other than freeware test suites), BIOS files, music, screenshots, metadata, or videos concerning copy-written games. Other than the configurations and overlays, it has nothing that can't be downloaded through the repository or freeware.
+
+___
+
+**Where Can I Get It?**
+
+You can download a premade image from Google Drive:
+
+> NOTE: Please expand your file system via Raspi-Config after your first boot, and reboot!
+
+***[CRTPi-480p v3.0X: For Pi3B/B+ with HDMI or VGA666](https://drive.google.com/file/d/1acoEU0MTlOIJzqVsNjV3D1AljAROZ7w0/view?usp=sharing)***
+
+    MD5: 9ad75efe8516ab0e7f2df3b084e93dcd
+	
+***[CRTPi-480p v3.4X: For Pi4B with HDMI or VGA666](https://drive.google.com/file/d/14W3Xe2rEC14NlErDUE0BmTV5Gaih7RKh/view?usp=sharing)***
+
+    MD5: 9ad75efe8516ab0e7f2df3b084e93dcd
+		
+___
+
+**How do I set this up?**
+
+Edit the /boot/config.txt before first boot.
+
+If you're using an HDMI to <blank> converter, select *one* HDMI block of your preference by uncommenting it and commenting out the rest. The default is HDMI CEA 480p.
+
+If you're using a VGA666, uncomment this block, and then *one* VGA666 block of your choice.
+
+    \## VGA666 - DPI Settings
+    \#dtoverlay=vga666
+    \#enable_dpi_lcd=1
+    \#display_default_lcd=1
+
+___
+
+**Default Retroarch Keyboard Hotkeys**
+
+    *SPACE: Enable Hotkey*
+    F1 Menu
+    F2 FF Toggle
+    F3 Reset
+    F4 Cheat Toggle
+    F5 Save State
+    F6 Load State
+    F7 Change State -
+    F8 Change State +
+    F9 Screenshot
+    F10 Mute
+    ENTER: Exit
+
+___
+
+**The GBA/GBC/GB overlay is cropped on my <INSTERT OUTPUT METHOD HERE>!!!**
+
+Go into the Retroarch menu in game and navigate to "Quick Menu > On-Screen Overlay".  Click "Overlay Preset" and choose the VGA version instead of the 480p version -- "crt_gbaplayer..." is for GBA and "crt_supergameboy..." is for GB/GBC.
+
+___
+
+**I have X Issue! Help?**
+
+***Chrono Cross (or Bloody Roar II) or some other PSX game has weird thick-as-fuck scanlines!***
+
+Disable the scanline shader, leaving Snap-Basic in place. Chances are you're playing a 480i game that wasn't intended to have scanlines, and the shader can't clamp to the right frames.
+
+***I only have like 500mb of free space on my XXgb SD card!***
+
+You need to expand your file system via Raspi-Config. Follow [these](https://crispconcept.com/pages/expand-sd-card) steps. 
+
+***GBA, PSX, Neo-Geo, Sega-CD, PCE-CD, etc. games don't work!***
+
+I haven't included any bios's that didn't come with the retropie stock image, so you'll need to install the appropriate files in the BIOS folder.  For Neo-Geo, I highly recommend the UniBios (renamed to neogeo.zip).
+
+***Samba Share won't work after I set up Wi-Fi!***
+
+Samba share service starts on boot, pending that a network is available. Configure your Wi-Fi then reboot first, and if that doesn't fix it then go into Retropie Setup > Configuration/Tools > Samba > Install Samba.  Once it's complete, reboot and it should be golden.
+
+***USB-Romservice and/or Retropie-Mount don't work!***
+
+Follow [this guide](https://github.com/RetroPie/RetroPie-Setup/wiki/Running-ROMs-from-a-USB-drive), but follow these steps before plugging in your thumb drive:
+
+* Go to Retropie-Setup
+* Update retropie install script
+* Go to Manage Packages -> Optional Packages
+* Scroll all the way down to usbromservice
+* Uninstall usbromservice
+* Install it again from Binary
+* Once finished, choose Configuration, then Enable USB Romservice
+* Reboot, and wait for it to fully boot in to ES
+* Plug in USB stick (has to be FAT32) and WAIT A LONG TIME (if your stick has a light, wait for it to stop flashing)
+
+___
