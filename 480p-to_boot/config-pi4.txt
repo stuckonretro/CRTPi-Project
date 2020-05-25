@@ -1,0 +1,152 @@
+#############################################################################################
+#############################################################################################
+################# BELOW ARE SETTINGS SPECIFIC TO THE CRT-Pi PROJECT IMAGES! #################
+################# DON'T CHANGE ANYTHING YOU IF YOU DON'T KNOW WHAT IT DOES! #################
+################ ONLY UNCOMMENT THE BLOCKS SPECIFIC TO YOUR SPECIFIC DEVICE! ################
+#############################################################################################
+#############################################################################################
+
+[pi4]
+# Enable DRM VC4 V3D driver on top of the dispmanx display stack
+dtoverlay=vc4-fkms-v3d
+max_framebuffers=2
+
+## Analog Audio Settings!!
+#disable_audio_dither=1
+#audio_pwm_mode=2
+
+#############################################################################################
+################# CHOOSE ONLY ONE DISPLAY ADAPTER BLOCK TO UNCOMMENT AT ONE #################
+################# TIME! IGNORE THE EXPERIMENTAL BOOT TIMING UNLESS YOU KNOW #################
+################## WHAT YOU ARE DOING AND WHY YOU ARE USING IT! GOOD LUCK! ##################
+#############################################################################################
+
+## HDMI to VGA - DMT 640x480@60hz
+#hdmi_group=2
+#hdmi_mode=4
+
+## HDMI to Analog - CEA 480p@60hz
+hdmi_group=1
+hdmi_mode=2
+
+## VGA666 - DPI Settings
+#dtoverlay=vga666
+#enable_dpi_lcd=1
+#display_default_lcd=1
+
+## VGA666 - DMT 640x480@65hz
+#dpi_group=2
+#dpi_mode=87
+#dpi_timings=640 1 56 56 80 480 0 1 3 25 0 0 0 65 0 36000000 1 #VGA666 Stable 640x480p@65hz
+
+## VGA666 - DMT 640x480@60hz
+#dpi_group=2
+#dpi_mode=4
+
+## VGA666 - DMT 640x480@85hz
+#dpi_group=2
+#dpi_mode=7
+
+## Disable Monitor EDID
+hdmi_ignore_edid=0xa5000080
+hdmi_ignore_cec_init=1
+
+# Uncomment for TATE mode (270 Degree)
+#display_lcd_rotate=3
+
+#############################################################################################
+#############################################################################################
+
+## For more options and information see
+## http://rpf.io/configtxt
+## Some settings may impact device functionality. See link above for details
+
+## Uncomment to disable rainbow splash on boot
+disable_splash=1
+boot_delay=1
+
+## Uncomment if you get no picture on HDMI for a default "safe" mode
+#hdmi_safe=1
+
+## Uncomment this if your display has a black border of unused pixels visible and your display can output without overscan
+#disable_overscan=1
+
+## Uncomment the following to adjust overscan. Use positive numbers if console goes off screen, and negative if there is too much border
+#overscan_left=16
+#overscan_right=16
+#overscan_top=16
+#overscan_bottom=16
+
+## Uncomment to force a console size. By default it will be display's size minus overscan.
+#framebuffer_width=1280
+#framebuffer_height=720
+
+## Uncomment if hdmi display is not detected and composite is being output
+hdmi_force_hotplug=1
+
+## Uncomment to force a specific HDMI mode (this will force VGA)
+#hdmi_group=1
+#hdmi_mode=1
+
+## Uncomment to force a HDMI mode rather than DVI. This can make audio work in DMT (computer monitor) modes
+hdmi_drive=2
+#hdmi_ignore_cec_init=1
+
+## Uncomment to increase signal to HDMI, if you have interference, blanking, or no display
+#config_hdmi_boost=4
+
+## Uncomment for composite PAL
+#sdtv_mode=2
+
+## Uncomment to overclock the Pi2. 900 MHz is the default.
+#total_mem=1024
+#arm_freq=1000
+#gpu_freq=500
+#core_freq=500
+#sdram_freq=500
+#sdram_schmoo=0x02000020
+#over_voltage=2
+#sdram_over_voltage=2
+
+## Uncomment to overclock the Pi3B. **DO NOT USE FOR 3B+** 1200 MHz is the default.
+#total_mem=1024
+#arm_freq=1300
+#gpu_freq=500
+#core_freq=500
+#sdram_freq=500
+#sdram_schmoo=0x02000020
+#over_voltage=2
+#sdram_over_voltage=2
+
+## Uncomment to overclock the Pi3B+. **DO NOT USE FOR 3B**  1400 Mhz is the default.
+#total_mem=1024
+#arm_freq=1425
+#core_freq=600
+#v3d_freq=400
+#sdram_freq=550
+#over_voltage=1
+#temp_soft_limit=70
+
+## You can also raise the minimum frequency of the dynamic clock (Defaults are 600 & 250 for Pi3B+)
+#arm_freq_min=900
+#core_freq_min=325
+
+## Uncomment some or all of these to enable the optional hardware interfaces
+#dtparam=i2c_arm=on
+#dtparam=i2s=on
+#dtparam=spi=on
+
+# Uncomment this to enable the lirc-rpi module
+#dtoverlay=lirc-rpi
+
+## Additional overlays and parameters are documented /boot/overlays/README
+
+## Enable audio (loads snd_bcm2835)
+dtparam=audio=on
+gpu_mem_256=128
+gpu_mem_512=256
+gpu_mem_1024=256
+#overscan_scale=1
+
+#############################################################################################
+#############################################################################################

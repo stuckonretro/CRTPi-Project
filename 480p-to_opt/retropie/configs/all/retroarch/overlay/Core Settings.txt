@@ -1,0 +1,7 @@
+
+Core Settings,
+
+Aspect Ratio - Custom
+Width - 960
+Height - 544
+Interger Turned On
