@@ -104,13 +104,13 @@ You can download a premade image from Google Drive:
 
 > NOTE: Please expand your file system via Raspi-Config after your first boot, and reboot!
 
-***[CRTPi-480p v3.0X: For Pi3B/B+ with HDMI or VGA666](https://drive.google.com/file/d/1acoEU0MTlOIJzqVsNjV3D1AljAROZ7w0/view?usp=sharing)***
+***[CRTPi-480p v3.0X: For Pi3B/B+ with HDMI or VGA666](https://drive.google.com/file/d/1acoEU0MTlOIJzqVsNjV3D1AljAROZ7w0/view?usp=sharing)*** *LIVE @ NOW*
 
     MD5: 9ad75efe8516ab0e7f2df3b084e93dcd
 	
-***[CRTPi-480p v3.4X: For Pi4B with HDMI or VGA666](https://drive.google.com/file/d/14W3Xe2rEC14NlErDUE0BmTV5Gaih7RKh/view?usp=sharing)***
+***[CRTPi-480p v3.4X: For Pi4B with HDMI or VGA666](https://drive.google.com/file/d/14W3Xe2rEC14NlErDUE0BmTV5Gaih7RKh/view?usp=sharing)*** *LIVE @ 16:40PST*
 
-    MD5: 9ad75efe8516ab0e7f2df3b084e93dcd
+    MD5: 7272a6ac24fa5004a1f6c961264b2d7d
 		
 ___
 
