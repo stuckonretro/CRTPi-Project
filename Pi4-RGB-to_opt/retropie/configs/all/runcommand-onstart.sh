@@ -137,7 +137,7 @@ if [[ "$emul_lr" == "lr" ]]; then
 		echo 'vcgencmd hdmi_timings 2048 1 160 202 320 240 1 3 5 14 0 0 0 60 0 42954545 1 && tvservice -c "DMT 87" && fbset -depth 8 && fbset -depth 16 && fbset -depth 32 -xres 2048 -yres 240' > /opt/retropie/configs/all/desired_mode/value 
 		vcgencmd hdmi_timings 2048 1 160 202 320 240 1 3 5 14 0 0 0 60 0 42954545 1 > /dev/null #Retrotink 2048x240p Timing Adjusted
 		tvservice -c "DMT 87" > /dev/null
-		fbset -depth 8 && fbset -depth 16 -xres 2048 -yres 240 > /dev/null #VGA666 16b depth
+		fbset -depth 8 && fbset -depth 16 && fbset -depth 24 && fbset -depth 32 -xres 2048 -yres 240 > /dev/null #VGA666 16b depth
 	# change timings for 320.txt to 1920x240p
 	elif { ! echo "$3" | grep -q -wi "$TwoFiveSix" || echo "$TwoFiveSix" | grep -q empty; } && ! echo "$TwoFiveSix" | grep -q -xi "all" && { echo "$3" | grep -q -wi "$ThreeTwenty"; } then > /dev/null
 #		vcgencmd hdmi_timings 1920 1 152 247 280 240 1 3 7 12 0 0 0 60 0 40860000 1 > /dev/null #Pi2SCART Standard 1920x240p Timing Original
@@ -145,7 +145,7 @@ if [[ "$emul_lr" == "lr" ]]; then
 		echo 'vcgencmd hdmi_timings 1920 1 137 247 295 240 1 3 7 12 0 0 0 60 0 40860000 1 && tvservice -c "DMT 87" && fbset -depth 8 && fbset -depth 16 && fbset -depth 32 -xres 1920 -yres 240' > /opt/retropie/configs/all/desired_mode/value
 		vcgencmd hdmi_timings 1920 1 137 247 295 240 1 3 7 12 0 0 0 60 0 40860000 1 > /dev/null #Pi2SCART Standard 1920x240p Timing Adjusted
 		tvservice -c "DMT 87" > /dev/null
-		fbset -depth 8 && fbset -depth 16 && fbset -depth 32 -xres 1920 -yres 240 > /dev/null #VGA666 16b depth
+		fbset -depth 8 && fbset -depth 16 && fbset -depth 24 && fbset -depth 32 -xres 1920 -yres 240 > /dev/null #VGA666 16b depth
 	# change timings for 256x systems to 2048x240p
 	elif 
 		[[ "$system" == "snes" ]] || 
@@ -171,7 +171,7 @@ if [[ "$emul_lr" == "lr" ]]; then
 			echo 'vcgencmd hdmi_timings 2048 1 160 202 320 240 1 3 5 14 0 0 0 60 0 42954545 1 && tvservice -c "DMT 87" && fbset -depth 8 && fbset -depth 16 && fbset -depth 32 -xres 2048 -yres 240' > /opt/retropie/configs/all/desired_mode/value 
 			vcgencmd hdmi_timings 2048 1 160 202 320 240 1 3 5 14 0 0 0 60 0 42954545 1 > /dev/null #Retrotink 2048x240p Timing Adjusted
 			tvservice -c "DMT 87" > /dev/null
-			fbset -depth 8 && fbset -depth 16 -xres 2048 -yres 240 > /dev/null #VGA666 16b depth
+			fbset -depth 8 && fbset -depth 16 && fbset -depth 24 && fbset -depth 32 -xres 2048 -yres 240 > /dev/null #VGA666 16b depth
 	# change timings for 320x systems to 1920x240p
 	elif 
 		[[ "$system" == "megadrive" ]] || 
@@ -199,14 +199,14 @@ if [[ "$emul_lr" == "lr" ]]; then
 			echo 'vcgencmd hdmi_timings 1920 1 137 247 295 240 1 3 7 12 0 0 0 60 0 40860000 1 && tvservice -c "DMT 87" && fbset -depth 8 && fbset -depth 16 && fbset -depth 32 -xres 1920 -yres 240' > /opt/retropie/configs/all/desired_mode/value
 			vcgencmd hdmi_timings 1920 1 137 247 295 240 1 3 7 12 0 0 0 60 0 40860000 1 > /dev/null #Pi2SCART Standard 1920x240p Timing Adjusted
 			tvservice -c "DMT 87" > /dev/null
-			fbset -depth 8 && fbset -depth 16 && fbset -depth 32 -xres 1920 -yres 240 > /dev/null #VGA666 16b depth
+			fbset -depth 8 && fbset -depth 16 && fbset -depth 24 && fbset -depth 32 -xres 1920 -yres 240 > /dev/null #VGA666 16b depth
 	# default to 1600x240p for all other lr- systems
 	else
 #		vcgencmd hdmi_timings 1600 1 85 157 192 240 1 4 3 15 0 0 0 60 0 32000000 1 > /dev/null #VGA666 Standard 1600x240p Timing Original
 		echo 'vcgencmd hdmi_timings 1600 1 73 157 204 240 1 4 3 15 0 0 0 60 0 32000000 1 && tvservice -c "DMT 87" && fbset -depth 8 && fbset -depth 16 && fbset -depth 32 -xres 1600 -yres 240' > /opt/retropie/configs/all/desired_mode/value
 		vcgencmd hdmi_timings 1600 1 73 157 204 240 1 4 3 15 0 0 0 60 0 32000000 1 > /dev/null #VGA666 Standard 1600x240p Timing Adjusted
 		tvservice -c "DMT 87" > /dev/null
-		fbset -depth 8 && fbset -depth 16 -xres 1600 -yres 240 > /dev/null #VGA666 16b depth
+		fbset -depth 8 && fbset -depth 16 && fbset -depth 24 && fbset -depth 32 -xres 1600 -yres 240 > /dev/null #VGA666 16b depth
 	fi
 
 else
@@ -214,5 +214,5 @@ else
 	echo 'vcgencmd hdmi_timings 320 1 16 30 34 240 1 2 3 22 0 0 0 60 0 6400000 1 && tvservice -c "DMT 87" && fbset -depth 8 && fbset -depth 16 && fbset -depth 32 -xres 320 -yres 240' > /opt/retropie/configs/all/desired_mode/value
 	vcgencmd hdmi_timings 320 1 16 30 34 240 1 2 3 22 0 0 0 60 0 6400000 1 > /dev/null #VGA666 320x240p Timing
 	tvservice -c "DMT 87" 
-	fbset -depth 8 && fbset -depth 16 -xres 320 -yres 240 > /dev/null #VGA666 16b depth
+	fbset -depth 8 && fbset -depth 16 && fbset -depth 24 && fbset -depth 32 -xres 320 -yres 240 > /dev/null #VGA666 16b depth
 fi
