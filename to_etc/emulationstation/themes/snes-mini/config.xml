@@ -17,10 +17,10 @@ author:			ruckage
 	<include>./rating/heart.xml</include>	
 
 <!-- Choose your background (For the available options see the jpg files named ## BACKGROUND GUIDE ##) -->	
-    <include>./background/blurred_shots.xml</include>	
+    <include>./background/neon_rgb.xml</include>	
 	
 <!-- Choose your theme style (snes_europe or snes_usa or nes_rich_europe or nes_rich_usa or nes_simple_europe or nes_simple_usa) -->	
-	<include>./style/snes_usa.xml</include>	
+	<include>./style/snes_europe.xml</include>	
 	
 <!-- Choose your resolution -->	
 	<include>./layouts/ntsc.xml</include> <!-- supported resolutions 640x480, 800x600, 1024x768, 1280x720, 1280x960, 1366x768, 1440x1080, 1920x1080, ntsc, pal -->
