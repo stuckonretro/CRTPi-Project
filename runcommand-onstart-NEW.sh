@@ -24,15 +24,15 @@
 #			Default non supported non-lr emulators to 1600x240p - #CRTpi-Project
 #			Added config-per core scripting to change between 2048x224p / 2048x240p / 2048x192p - #CRTPi-Project
 #			Added config-per core scripting to change between 1920x224p / 1920x240p / 1920x200p / 1920x192p - #CRTPi-Project
-#				Added per-game user scripting using heavily modified Sakitoshi tv-out script - #CRTPi-Project
+#			Added per-game user scripting using heavily modified Sakitoshi tv-out script - #CRTPi-Project
+#
 #og. author	:  Michael Vencio
 #ad. author	:  Sakitoshi
 #revision	:  CRTPi-Project v3.1
 #rev. author    :  http://reddit.com/r/u_erantyint
 #rev. date	:  July10-2020
-#notes          :  For advance users only and would need to be tweaked 
-#		to cater to your needs and preference
-#		resolution.ini (MAME 0.184) file needed http://www.progettosnaps.net/renameset/
+#notes          :  For advance users only and would need to be tweaked to cater to your needs and preference
+#		   resolution.ini (MAME 0.184) file needed http://www.progettosnaps.net/renameset/
 #=====================================================================================================================================
 
 #### Michael Vencio ####
