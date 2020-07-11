@@ -21,7 +21,7 @@
 #			Reverted hdmi_timings to previous version
 #			Removed all logging
 #			Default non supported non-lr emulators to 320x240
-#			Default non supported non-lr emulators to 1600x240p - #CRTpi-Project
+#			Default non supported lr- emulators to 1600x240p - #CRTpi-Project
 #			Added config-per core scripting to change between 2048x224p / 2048x240p / 2048x192p - #CRTPi-Project
 #			Added config-per core scripting to change between 1920x224p / 1920x240p / 1920x200p / 1920x192p - #CRTPi-Project
 #			Added per-game user scripting using heavily modified Sakitoshi tv-out script - #CRTPi-Project
