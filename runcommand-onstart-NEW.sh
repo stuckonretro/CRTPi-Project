@@ -252,6 +252,9 @@ elif
 # for eDuke32 switch to 320x200p
 	[[ "$system" == "eduke32" ]] ||
 	[[ "$system" == "duke3d" ]] ||
+	[[ "$system" == "scummvm" ]] ||
+	[[ "$system" == "dosbox" ]] ||
+	[[ "$system" == "pc" ]] ||
 	[[ "$system" == "c64" ]] ; then
 	vcgencmd hdmi_timings 320 1 10 30 40 200 1 28 3 36 0 0 0 60 0 6400000 1 > /dev/null #CRTPi 320x200p Adjusted
 	tvservice -c "DMT 87" 
