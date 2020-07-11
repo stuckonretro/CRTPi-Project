@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #=====================================================================================================================================
-#title           :	runcommand-onstart.sh
-#description     :	This script perform the following - #Mike Vencio
+#title           :   runcommand-onstart.sh
+#description     :   This script perform the following - #Mike Vencio
 #			Determines if the game being run is a console or an arcade/fba
 #			For arcades, it will dynamically determine the resolution based on MAME resolution.ini file
 #			For consoles, hdmi_timings can be set based on emulator or system
@@ -25,7 +25,6 @@
 #			Added config-per core scripting to change between 2048x224p / 2048x240p / 2048x192p - #CRTPi-Project
 #			Added config-per core scripting to change between 1920x224p / 1920x240p / 1920x200p / 1920x192p - #CRTPi-Project
 #			Added per-game user scripting using heavily modified Sakitoshi tv-out script - #CRTPi-Project
-#
 #og. author	:  Michael Vencio
 #ad. author	:  Sakitoshi
 #revision	:  CRTPi-Project v4.0
