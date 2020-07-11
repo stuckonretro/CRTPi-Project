@@ -2,37 +2,37 @@
 #=====================================================================================================================================
 #title           :	runcommand-onstart.sh
 #description     :	This script perform the following - #Mike Vencio
-#					Determines if the game being run is a console or an arcade/fba
-#					For arcades, it will dynamically determine the resolution based on MAME resolution.ini file
-#					For consoles, hdmi_timings can be set based on emulator or system
-#					Dynamically creates the game_name.zip.cfg file and sets the custom_viewport_height for MAME/FBA/NeoGeo
-#					Dynamically add these parameters (video_allow_rotate = "true" and video_rotation = 1) for vertical games
-#					vertical.txt contains all the mame 0.184 vertical games
-#					Ability to set custom_viewport_width for MAME/FBA/NeoGeo
-#					Fix arcade custom_viewport_width for 320x224 and 320x240 resolutions
-#					Added amiga and C64 support
+#			Determines if the game being run is a console or an arcade/fba
+#			For arcades, it will dynamically determine the resolution based on MAME resolution.ini file
+#			For consoles, hdmi_timings can be set based on emulator or system
+#			Dynamically creates the game_name.zip.cfg file and sets the custom_viewport_height for MAME/FBA/NeoGeo
+#			Dynamically add these parameters (video_allow_rotate = "true" and video_rotation = 1) for vertical games
+#			vertical.txt contains all the mame 0.184 vertical games
+#			Ability to set custom_viewport_width for MAME/FBA/NeoGeo
+#			Fix arcade custom_viewport_width for 320x224 and 320x240 resolutions
+#			Added amiga and C64 support
 #	                Automatically set custom_viewport_y to center vertically (Removed on 0.7.1)
-#					Added support for 480 height arcade games like tapper
-#					Disable resolution change for non libretto cores
-#					Added support for 448 height arcade games like popeye
-#					Added support for 254 height arcade games like mk3
-#					Arcade/FBA/Mame-Libretro/NeoGeo - Set custom_viewport_width to be rom_resolution_width closest to 1920
-#					Removed text output when running scripts
-#					Reverted hdmi_timings to previous version
-#					Removed all logging
-#					Default non supported non-lr emulators to 320x240
-#					Default non supported non-lr emulators to 1600x240p - #CRTpi-Project
-#					Added config-per core scripting to change between 2048x224p / 2048x240p / 2048x192p - #CRTPi-Project
-#					Added config-per core scripting to change between 1920x224p / 1920x240p / 1920x200p / 1920x192p - #CRTPi-Project
-#					Added per-game user scripting using heavily modified Sakitoshi tv-out script - #CRTPi-Project
-#og. author		 :	Michael Vencio
-#ad. author		 :  Sakitoshi
-#revision		 :  CRTPi-Project v3.1
-#rev. author     :  http://reddit.com/r/u_erantyint
-#rev. date		 :  July10-2020
-#notes           :	For advance users only and would need to be tweaked 
-#					to cater to your needs and preference
-#					resolution.ini (MAME 0.184) file needed http://www.progettosnaps.net/renameset/
+#			Added support for 480 height arcade games like tapper
+#			Disable resolution change for non libretto cores
+#			Added support for 448 height arcade games like popeye
+#			Added support for 254 height arcade games like mk3
+#			Arcade/FBA/Mame-Libretro/NeoGeo - Set custom_viewport_width to be rom_resolution_width closest to 1920
+#			Removed text output when running scripts
+#			Reverted hdmi_timings to previous version
+#			Removed all logging
+#			Default non supported non-lr emulators to 320x240
+#			Default non supported non-lr emulators to 1600x240p - #CRTpi-Project
+#			Added config-per core scripting to change between 2048x224p / 2048x240p / 2048x192p - #CRTPi-Project
+#			Added config-per core scripting to change between 1920x224p / 1920x240p / 1920x200p / 1920x192p - #CRTPi-Project
+#				Added per-game user scripting using heavily modified Sakitoshi tv-out script - #CRTPi-Project
+#og. author	:  Michael Vencio
+#ad. author	:  Sakitoshi
+#revision	:  CRTPi-Project v3.1
+#rev. author    :  http://reddit.com/r/u_erantyint
+#rev. date	:  July10-2020
+#notes          :  For advance users only and would need to be tweaked 
+#		to cater to your needs and preference
+#		resolution.ini (MAME 0.184) file needed http://www.progettosnaps.net/renameset/
 #=====================================================================================================================================
 
 #### Michael Vencio ####
