@@ -28,7 +28,7 @@
 #
 #og. author	:  Michael Vencio
 #ad. author	:  Sakitoshi
-#revision	:  CRTPi-Project v3.1
+#revision	:  CRTPi-Project v4.0
 #rev. author    :  http://reddit.com/r/u_erantyint
 #rev. date	:  July10-2020
 #notes          :  For advance users only and would need to be tweaked to cater to your needs and preference
