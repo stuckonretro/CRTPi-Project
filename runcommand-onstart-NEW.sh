@@ -255,7 +255,7 @@ elif
 	[[ "$system" == "dosbox" ]] ||
 	[[ "$system" == "pc" ]] ||
 	[[ "$system" == "c64" ]] ; then
-	vcgencmd hdmi_timings 320 1 10 30 40 200 1 28 3 36 0 0 0 60 0 6400000 1 > /dev/null #CRTPi 320x200p Adjusted
+	vcgencmd hdmi_timings 320 1 10 30 40 200 1 28 3 31 0 0 0 60 0 6400000 1 > /dev/null #CRTPi 320x200p Adjusted
 	tvservice -c "DMT 87" 
 	fbset -depth 8 && fbset -depth 16 && fbset -depth 24 -xres 320 -yres 200 > /dev/null #24b depth
 	
