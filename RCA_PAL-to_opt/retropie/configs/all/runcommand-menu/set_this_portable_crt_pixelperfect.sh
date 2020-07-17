@@ -1,2 +1,0 @@
-if [[ "$1" = @("atarilynx"|"gamegear"|"gb"|"gba"|"gbc"|"ngp"|"ngpc"|"wonderswan"|"wonderswancolor") ]]; then echo pixelperfect > /opt/retropie/configs/$1/default; cp /opt/retropie/configs/$1/retroarch_pixelperfect.cfg /opt/retropie/configs/$1/retroarch.cfg; fi > /tmp/null
-exit 1
