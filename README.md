@@ -1,8 +1,16 @@
 # CRTPi-Project
 *A Vanilla+ experience for CRT gamers utilizing Retropie!*
+
+#Forks:
+
+* CRTPi-RGB: https://github.com/crtpi/CRTPi-RGB
+* CRTPi-RCA: https://github.com/crtpi/CRTPi-RCA
+* CRTPi-VGA: https://github.com/crtpi/CRTPi-VGA
+* CRTPi-480: https://github.com/crtpi/CRTPi-480
+
 _____
 
-Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Strike Devices, Artemio Urbina, Ruckage, ChipsnBlip, Podunk_Labs, kitty666cats, and anyone I've missed! Thank you for the input, support, resources, and help along the way!
+Thank you very much to Mike V, Sakitoshi, Mike Chi, the guys at Arcadeforge, Artemio Urbina, Ruckage, ChipsnBlip, Podunk_Labs, kitty666cats, and anyone I've missed! Thank you for the input, support, resources, and help along the way!
 
 **Major Changelogs and Features can be viewed in the pinned posts here:**
 
@@ -35,7 +43,7 @@ _____
 
 _____
 
-**Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+ using the 4.6 offical image (Or 4.5.1 updated to 4.6). Anything you overwrite is your own fault at this point!**
+**Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+ using the 4.6 official image (Or 4.5.1 updated to 4.6). Anything you overwrite is your own fault at this point!**
 
 *RGB: For RetroTINK Ultimate, Pi2SCART, RGB-Pi, or VGA666 to a 15khz Display*
 
@@ -146,6 +154,25 @@ Not only does the new script carry forward the per-core scripting for 2048x / 19
     Super Mario Brothers 2
 
 You get the jist. It doesn't need an extension, but should match the rom name including punctuation. This forces them to launch in 2048x240p instead of the default 1920x240p, or vise versa. This gives the end user full control on a game-per-game basis over the horizontal integer. You'll still need to write a retroarch game config to override the defaults there, but this at least gets you the right field. For games with odd/shifting vertical resolutions (like Chrono Cross, Battle Arena Toshinden, Castlevania SotN, etc.), a single pass of snap-shader is applied (snap-basic, nearest neighbor filtering, and "don't care" scale).
+
+**Here's information about Sakitoshi's 240p/480i Script:**
+
+    https://github.com/ektgit/snap-shader-240p
+
+**And here's a quick rundown on how it works:**
+
+To force 480i for a system or game, you can create a '480i.txt' file inside the configuration folder of the system with a list of the file names (case insensitive, extension optional but recommended) you want to force. 
+
+If you wish to force 480i for a whole system, you can write "all" inside the '480i.txt' file. 
+
+Alternatively you can create a "240p.txt" file to force 480i to all games *except for* the ones inside the list.
+
+*Examples:*
+
+    /opt/retropie/configs/psx/480i.txt containing "Bloody Roar 2.PBP" to force 480i for the file "Bloody Roar 2.PBP"
+    /opt/retropie/configs/psx/480i.txt containing "all" to force 480i for all the PlayStation games.
+    /opt/retropie/configs/ports/kodi/480i.txt containing "all" to force 480i on Kodi.
+	
 
 _____
 
