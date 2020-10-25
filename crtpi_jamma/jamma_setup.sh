@@ -1,9 +1,10 @@
-sudo mount -o remount, rw /
-sudo mv /opt/retropie/configs/all/emulationstation/es_input.cfg /opt/retropie/configs/all/emulationstation/es_input.cfg_backup
-sudo cp es_input.cfg /opt/retropie/configs/all/emulationstation/es_input.cfg
-sudo cp pikeyd165 /usr/bin/
-sudo cp pikeyd165.conf /etc/
-sudo echo "/usr/bin/pikeyd165 -d" >> ~/custom.sh
-sudo chmod u+x ~/custom.sh
-sudo chmod u+x /usr/bin/pikeyd165
-emulationstation
+mount -o remount, rw /
+mv /opt/retropie/configs/all/emulationstation/es_input.cfg /opt/retropie/configs/all/emulationstation/es_input.cfg_backup
+cp es_input.cfg /opt/retropie/configs/all/emulationstation/es_input.cfg
+cp pikeyd165 /usr/bin/
+cp pikeyd165.conf /etc/
+mv /opt/retropie/configs/all/autostart.sh /opt/retropie/configs/all/autostart.sh_backup 
+cp autostart.sh /opt/retropie/configs/all/
+chmod a+rwx /opt/retropie/configs/all/autostart.sh
+chmod a+rwx /usr/bin/pikeyd165
+reboot now
