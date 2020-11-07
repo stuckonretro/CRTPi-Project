@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./screenswitch.sh</path>
+		<name>Switch Screns</name>
+		<desc>Switches between HDMI and GPIO configs -- WARNING! Will Reboot your Pi!.</desc>
+		<image>./icons/splashscreen.png</image>
+		<rating>0</rating>
+		<releasedate>19700101T010000</releasedate>
+		<hidden>false</hidden>
+		<playcount>1</playcount>
+		<lastplayed>20190603T235727</lastplayed>
+	</game>
+	<game>
+		<path>./audiosettings.rp</path>
+		<name>Audio</name>
+		<desc>Configure audio settings. Choose default of auto, 3.5mm jack, or HDMI. Mixer controls, and apply default settings.</desc>
+		<image>./icons/audiosettings.png</image>
+		<rating>0</rating>
+		<releasedate>19700101T010000</releasedate>
+		<hidden>false</hidden>
+		<playcount>1</playcount>
+		<lastplayed>20190603T235727</lastplayed>
+	</game>
+	<game>
+		<path>./bluetooth.rp</path>
+		<name>Bluetooth</name>
+		<desc>Register and connect to bluetooth devices. Unregister and remove devices, and display registered and connected devices.</desc>
+		<image>./icons/bluetooth.png</image>
+		<rating>0</rating>
+		<releasedate>19700101T010000</releasedate>
+		<hidden>false</hidden>
+		<playcount>2</playcount>
+		<lastplayed>20190730T014409</lastplayed>
+	</game>
+	<game>
+		<path>./configedit.rp</path>
+		<name>Configuration Editor</name>
+		<desc>Change common RetroArch options, and manually edit RetroArch configs, global configs, and non-RetroArch configs.</desc>
+		<image>./icons/configedit.png</image>
+		<rating>0</rating>
+		<releasedate>19700101T010000</releasedate>
+		<hidden>false</hidden>
+	</game>
+	<game>
+		<path>./filemanager.rp</path>
+		<name>File Manager</name>
+		<desc>Basic ascii file manager for linux allowing you to browse, copy, delete, and move files.</desc>
+		<image>./icons/filemanager.png</image>
+		<rating>0</rating>
+		<releasedate>19700101T010000</releasedate>
+		<hidden>false</hidden>
+	</game>
+	<game>
+		<path>./runcommand.rp</path>
+		<name>Run Command Configuration</name>
+		<desc>Change what appears on the runcommand screen. Enable or disable the menu, enable or disable box art, and change CPU configuration.</desc>
+		<image>./icons/runcommand.png</image>
+		<rating>0</rating>
+		<releasedate>19700101T010000</releasedate>
+		<hidden>false</hidden>
+		<playcount>3</playcount>
+		<lastplayed>20200508T170315</lastplayed>
+	</game>
+	<game>
+		<path>./retronetplay.rp</path>
+		<name>RetroArch Net Play</name>
+		<desc>Set up RetroArch Netplay options, choose host or client, port, host IP, delay frames, and your nickname.</desc>
+		<image>./icons/retronetplay.png</image>
+		<rating>0</rating>
+		<releasedate>19700101T010000</releasedate>
+		<hidden>false</hidden>
+		<playcount>3</playcount>
+		<lastplayed>20200613T233124</lastplayed>
+	</game>
+	<game>
+		<path>./showip.rp</path>
+		<name>Show IP</name>
+		<desc>Displays your current IP address, as well as other information provided by the command, "ip addr show."</desc>
+		<image>./icons/showip.png</image>
+		<rating>0</rating>
+		<releasedate>19700101T010000</releasedate>
+		<hidden>false</hidden>
+		<playcount>1</playcount>
+		<lastplayed>20200712T192927</lastplayed>
+	</game>
+	<game>
+		<path>./splashscreen.rp</path>
+		<name>Splash Screens</name>
+		<desc>Enable or disable the splashscreen on RetroPie boot. Choose a splashscreen, download new splashscreens, and return splashscreen to default.</desc>
+		<image>./icons/splashscreen.png</image>
+		<rating>0</rating>
+		<releasedate>19700101T010000</releasedate>
+		<hidden>false</hidden>
+		<playcount>14</playcount>
+		<lastplayed>20200712T235116</lastplayed>
+	</game>
+	<game>
+		<path>./esthemes.rp</path>
+		<name>ES Themes</name>
+		<desc>Install, uninstall, or update EmulationStation themes. Most themes can be previewed at https://github.com/retropie/ RetroPie-Setup/wiki/themes.</desc>
+		<image>./icons/esthemes.png</image>
+		<rating>0</rating>
+		<releasedate>19700101T010000</releasedate>
+		<hidden>false</hidden>
+		<playcount>6</playcount>
+		<lastplayed>20200719T175841</lastplayed>
+	</game>
+	<game>
+		<path>./wifi.rp</path>
+		<name>WiFi</name>
+		<desc>Connect to or disconnect from a wifi network and configure wifi settings.</desc>
+		<image>./icons/wifi.png</image>
+		<rating>0</rating>
+		<releasedate>19700101T010000</releasedate>
+		<hidden>false</hidden>
+		<playcount>6</playcount>
+		<lastplayed>20200804T181152</lastplayed>
+	</game>
+	<game>
+		<path>./retroarch.rp</path>
+		<name>Retroarch</name>
+		<desc>Launches the RetroArch GUI so you can change RetroArch options. Note: Changes will not be saved unless you have enabled the "Save Configuration On Exit" option.</desc>
+		<image>./icons/retroarch.png</image>
+		<rating>0</rating>
+		<releasedate>19700101T010000</releasedate>
+		<hidden>false</hidden>
+		<playcount>35</playcount>
+		<lastplayed>20200804T224015</lastplayed>
+	</game>
+	<game>
+		<path>./raspiconfig.rp</path>
+		<name>Raspi-Config</name>
+		<desc>Change user password, boot options, internationalization, camera, add your pi to Rastrack, overclock, overscan, memory split, SSH and more.</desc>
+		<image>./icons/raspiconfig.png</image>
+		<rating>0</rating>
+		<releasedate>19700101T010000</releasedate>
+		<hidden>false</hidden>
+		<playcount>1</playcount>
+		<lastplayed>20200824T215143</lastplayed>
+	</game>
+	<game>
+		<path>./rpsetup.rp</path>
+		<name>RetroPie Setup</name>
+		<desc>Install RetroPie from binary or source, install experimental packages, additional drivers, edit samba shares, custom scraper, as well as other RetroPie-related configurations.</desc>
+		<image>./icons/rpsetup.png</image>
+		<rating>0</rating>
+		<releasedate>19700101T010000</releasedate>
+		<hidden>false</hidden>
+		<playcount>26</playcount>
+		<lastplayed>20201028T231829</lastplayed>
+	</game>
+</gameList>
